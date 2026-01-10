@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo 1</title>
+    <style>
+        .box1{
+            width: 180vh;height: 90px;float: left;
+            background-color: white;
+            border-left: 5px solid red;border-top: 5px solid red;
+            border-bottom:5px double red;border-right: 5px dashed red;
+            margin-left: 5px;
+        }
+
+        .subox{
+            height: 75px;width:75px ;float: left;
+            background-color: white;
+            margin: 7.5px 0px 0px 17px;
+            border: 2px solid red;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        #num{
+            /* font-weight: 100px; */
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .subox1{
+            height: 75px;width:75px ;float: left;
+            background-color: white;
+            margin-top: 7.5px;margin-left: 20px;
+            border: 2px solid red;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+        .box2{
+            width: 180vh;height:40vh;float: left;
+            background-color:gray;
+            border: 5px solid darkblue;
+            /* margin: 10px; */
+            margin-top: 5px;
+            margin-left: 5px;
+            /* padding: 5px; */
+        }
+        .subbox1{
+            width: 36vh;height: 40vh;float: left;
+            background-color: whitesmoke;
+            /* border: 5px solid blue; */
+            box-sizing: border-box;
+            border-right: 5px solid darkblue;
+            
+        }
+
+        .nest1{
+            width: 100px;height: 100px;
+            background-color: yellow;
+            margin-top:25px ;
+            margin-left: 85px;
+            border-radius: 50%;
+        }
+
+        .nest2{
+            width: 230px;height:45px;
+            background-color: yellow;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .nest3{
+            height: 100px;width: 230px;
+            background-color: yellow;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .box3{
+            height: 140px;width: 181.5vh;float: left;
+            background-color: yellow;margin-left: 5px;
+        }
+
+        .A{
+            width: 5.5%;float: left;
+            height: 110px;
+            background-color: darkblue;
+            margin-top:30px;
+            margin-left: 7px;
+        }
+        .B{
+            width: 3.5%;float: left;
+            height: 120px;
+            background-color: darkblue;
+            margin-left: 7px;
+        }
+
+        .C{
+            height: 130px;width: 180vh;background-color: whitesmoke;float: left;
+            margin-left: 11px;
+            margin-top: 25px;
+            outline: 5px double red;
+        }
+
+        .D{
+           height: 100px;width: 98%;background-color: whitesmoke;float: left;
+            margin-left: 13px;
+            margin-top: 14px;
+            padding-right: 4px;
+            outline: 5px double red; 
+        }
+
+        #E{
+            width: 65px;height: 65px;float: left;
+            margin-left: 11px; margin-top: 15px; background-color: rgba(241, 51, 51, 0.894);
+
+        }
+        #F{
+            width: 65px;height: 65px;float: left;
+            margin-left: 11px; margin-top: 15px; background-color: skyblue;
+            border-radius: 15px;
+
+        }
+        #G{
+            width: 65px;height: 65px;float: left;
+            margin-left: 11px; margin-top: 15px; background-color: lightgreen;
+            border-radius: 50%;
+
+        }
+        #H{
+            width: 65px;height: 65px;float: left;
+            margin-left: 11px; margin-top: 15px; background-color: violet;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+
+        }
+        #I{
+            width: 65px;height: 65px;float: left;
+            margin-left: 11px; margin-top: 15px; background-color: orange;
+            border-top-right-radius: 30px;
+            /* border-top-left-radius: 15px; */
+            /* border-bottom-right-radius: 15px; */
+            border-bottom-left-radius: 30px;
+        }
+
+        #V{
+            width: 65px;height: 65px;float: left;
+            margin-left: 11px; margin-top: 15px; background-color: goldenrod;
+            border-radius: 50%;
+
+        }
+        #J{
+            width: 65px;height: 65px;float: left;
+            margin-left: 11px; margin-top: 15px; background-color: powderblue;
+             border-top-right-radius: 75px;
+            /* border-top-left-radius: 15px; */
+            /* border-bottom-right-radius: 15px; */
+            border-bottom-left-radius: 75px;
+
+        }
+        #K{
+            width: 65px;height: 65px;float: left;
+            margin-left: 11px; margin-top: 15px; background-color: palevioletred;
+            border-radius: 50%;
+
+        }
+        #L{
+            width: 65px;height: 65px;float: left;
+            margin-left: 11px; margin-top: 15px; background-color: darkorchid;
+             border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+
+        }
+
+        #Q{
+            width: 65px;height: 65px;float: left;
+            margin-left: 11px; margin-top: 15px; background-color: orange;
+
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+
+        <div class="subox"><h1 id="num">1</h1></div>
+        <div class="subox"><h1 id="num">2</h1></div>
+        <div class="subox"><h1 id="num">3</h1></div>
+        <div class="subox"><h1 id="num">4</h1></div>
+        <div class="subox"><h1 id="num">5</h1></div>
+        <div class="subox"><h1 id="num">6</h1></div>
+        <div class="subox"><h1 id="num">7</h1></div>
+        <div class="subox"><h1 id="num">8</h1></div>
+        <div class="subox"><h1 id="num">9</h1></div>
+        <div class="subox"><h1 id="num">10</h1></div>
+        <div class="subox"><h1 id="num">11</h1></div>
+        <div class="subox"><h1 id="num">12</h1></div>
+        <div class="subox"><h1 id="num">13</h1></div>
+        <div class="subox"><h1 id="num">14</h1></div>
+        <div class="subox1"><h1 id="num">15</h1></div>
+
+    </div>
+
+    <div class="box2">
+
+        <div class="subbox1">
+            <div class="nest1"></div>
+            <div class="nest2"></div>
+            <div class="nest3"></div>
+        </div>
+
+        <div class="subbox1">
+
+            <div class="nest1"></div>
+            <div class="nest2"></div>
+            <div class="nest3"></div>
+
+        </div>
+        <div class="subbox1">
+
+            <div class="nest1"></div>
+            <div class="nest2"></div>
+            <div class="nest3"></div>
+
+        </div>
+
+        <div class="subbox1">
+
+            <div class="nest1"></div>
+            <div class="nest2"></div>
+            <div class="nest3"></div>
+
+        </div>
+
+        <div class="subbox1">
+
+            <div class="nest1"></div>
+            <div class="nest2"></div>
+            <div class="nest3"></div>
+
+        </div>
+
+    </div>
+    <div class="box3">
+        <div class="A"></div>
+        <div class="B"></div>
+        <div class="A"></div>
+        <div class="B"></div>
+        <div class="A"></div>
+        <div class="B"></div>
+        <div class="A"></div>
+        <div class="B"></div>
+        <div class="A"></div>
+        <div class="B"></div>
+        <div class="A"></div>
+        <div class="B"></div>
+        <div class="A"></div>
+        <div class="B"></div>
+        <div class="A"></div>
+        <div class="B"></div>
+        <div class="A"></div>
+        <div class="B"></div>
+        <div class="A"></div>
+        <div class="B"></div>
+    </div>
+    <div class="C">
+        <div class="D">
+            <div id="E"></div>
+            <div id="F"></div>
+            <div id="G"></div>
+            <div id="H"></div>
+            <div id="I"></div>
+            <div id="V"></div>
+            <div id="J"></div>
+            <div id="K"></div>
+            <div id="L"></div>
+            <div id="E"></div>
+            <div id="F"></div>
+            <div id="G"></div>
+            <div id="H"></div>
+            <div id="I"></div>
+            <div id="V"></div>
+            <div id="J"></div>
+            <div id="K"></div>
+            <div id="L"></div>
+            
+        </div>
+    </div>
+    <center>
+        <h1 style="color: black"><b style="font-family: 'Great Vibes', cursive;">Made With <b style="color: #AD1457;">&hearts;</b> <b>By Pankaj Sulakhe</b></h1>
+        </center>
+
+</body>
+</html>
