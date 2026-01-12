@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resistration form</title>
+    <style>
+        .men{
+            width: 100%;height: 650px;background-image: url(image2.jpg);
+            background-size: cover;display: flex;
+        }
+        .box1{
+            height: auto;width: 200px;float: left;display: flex;flex-direction: column;gap: 10px;
+            margin-top: 10px;
+        }
+        .A{
+            height: 80px;width: 200px;background-color: rgba(52, 43, 87, 0.3);
+            border-radius: 15px;text-align: center;font-size: 25px;font-weight: bold;
+            line-height: 80px;color: whitesmoke;border: 1px solid red;
+        }
+        .B{
+            height: 80px;width: 200px;background-color: rgba(52, 43, 87, 0.3);
+            border-radius: 15px;text-align: center;font-size: 25px;font-weight: bold;
+            line-height: 80px;color: whitesmoke;border: 1px solid red;
+        }
+        .box2{
+            height: auto;width: 200px;display: flex;flex-direction: column;gap: 10px;
+            float: right;margin-top: 10px;
+        }
+        .box{
+            height: 100%;width: 50%;margin-left: 15px;margin-top: 15px;
+        }
+        .subox{
+            width: 500px;height: 300px;background-image: url(image2.png);
+            background-size: cover;margin-left: 115px;margin-top:250px;
+        }
+        .form{
+            height: 550px;width: 450px;background-color: rgba(52, 43, 87, 0.3);
+            margin-top: 30px;
+            margin-left: 175px;
+            border-left: 2.5px solid red;
+            border-right: 2.5px solid red;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body style="margin: 0;">
+    <div class="men">
+
+       <div class="box">
+        <div class="box1">
+            <div class="A">HTML</div>
+            <div class="A">CSS</div>
+            <div class="A">BOOTSTRAP</div>
+            <div class="A">JAVA</div>
+        </div>
+         <!-- <img src="image2.png" alt="" id="image"> -->
+            
+        <div class="box2">
+            <div class="B">PHP</div>
+            <div class="B">JS</div>
+            <div class="B">PYTHON</div>
+            <div class="B">NODE JS</div>
+        </div>
+        <div class="subox">
+        </div>
+      </div>
+      <div class="form">
+        <center><h1 style="color: whitesmoke;">REGISTRATION FORM</h1></center>
+       <center><input type="text" placeholder="Enter FullName" style="width: 90%;height: 35px; border-bottom: 2px solid red; border-radius:50px;text-align: center;background-color:rgba(52, 43, 87, 0.5);"></center>
+       <center><input type="email" placeholder="Enter Email" style="width: 90%;height: 35px; border-bottom: 2px solid red; border-radius:50px;text-align: center;background-color:rgba(52, 43, 87, 0.5); margin-top: 15px;"></center>
+       <center><input type="number" placeholder="Enter Mobile" style="width: 90%;height: 35px; border-bottom: 2px solid red; border-radius:50px;text-align: center;background-color:rgba(52, 43, 87, 0.5);margin-top: 15px;"></center>
+       <center>
+        <select id="" style="width: 90%;height:40px; border-bottom: 2px solid red; border-radius:50px;text-align: center;background-color:rgba(52, 43, 87, 0.5); color: red;margin-top: 15px;" >
+            <option selected>Choose Course</option>
+        </select>
+        </center> 
+       <center><textarea name="add" id="" placeholder="Enter Youe Msg..." cols="2" rows="5" style=" width: 90%; border-bottom: 2px solid red; border-radius:50px;text-align: center;background-color:rgba(52, 43, 87, 0.5);margin-top: 15px; "></textarea></center>
+       <center><button style="margin-top: 20px;height: 35px;border-radius: 10px; background-color: red;color: whitesmoke;">Register Now</button></center>
+      </div>
+       
+    </div>
+</body>
+</html>
