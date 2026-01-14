@@ -4,8 +4,363 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Meet Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .box{
+           width: 1665px;height: 750px;background-color: #202124;
+           position: fixed;
+           top: 85px;
+           left: 50px;
+           display: block;
+           border-radius: 25px;
+           overflow: scroll;
+        }
+        .box1{
+            width: 68%;height: 630px;background-color: #202124;
+            position: absolute;
+            left: 1%;
+            top: 10px;
+        }
+        .box2{
+            width: 28%;height: 625px;background-color: whitesmoke;
+            position: absolute;
+            right: 1%;
+            top: 2%;
+            border-radius: 10px;
+            display: block;
+            overflow: auto;
+        }
+        .box3{
+        width: 95%;
+        height: 50px;
+        background-color: #202124;
+        position: absolute;
+        left: 1%;
+        right: 1%;
+        top: 90%;
+        border-radius: 10px;
+        z-index: 500;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        }
+
+        .left {
+        display: flex;
+        gap: 12px;
+        font-size: 15px;
+        }
+
+        .center {
+        display: flex;
+        gap: 14px;
+        }
+
+        .right {
+        display: flex;
+        gap: 12px;
+        }
+
+        .icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #3c4043;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        .icon:hover {
+        background: #5f6368;
+        }
+
+        .icon.red {
+        background: #ea4335;
+        }
+
+        .icon.end {
+        background: #ea4335;
+        }
+
+        .b1{
+            width: 32%;height: 32%;background-color: #3D4043;float: left;
+            margin-top: 8px;
+            margin-left: 11px;
+            /* margin-bottom: 7px; */
+            border-radius: 10px;
+            line-height: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: whitesmoke;
+            box-shadow: 0px 5px 20px rgba(0,0,0,1);
+        }
+        .b2{
+            height: 130px; 
+            width: 130px;border-radius: 50%;
+            position: relative;
+            top: 5px;
+            left: 110px;
+            text-align: center;
+            line-height:120px;
+            color: whitesmoke;
+            font-size: 70px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        .b3{
+            height: 70px; 
+            width: 70px;background-color: #fff;border-radius: 50%;
+            position: relative;
+            top: 50px;
+            left: 170px;
+            border: 2px solid #3D4043;
+            box-sizing: border-box;
+            z-index: 400;
+            text-align: center;
+            line-height: 60px;
+            color: whitesmoke;
+            font-size: 25px; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;       
+            }
+        .b4{
+             height: 70px; 
+            width: 70px;background-color: #fff;border-radius: 50%;
+            position: relative;
+            bottom: 22px;
+            left: 110px;
+            border: 2px solid #3D4043;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 50px;
+            color: whitesmoke;
+            font-size: 25px; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .m{
+            width: 30px;height: 30px;background-color: #202124;font-size: 20px;
+            color: whitesmoke;
+            border-radius: 50%;text-align: center;
+            line-height: 35px;
+            position: relative;
+            left: 320px;
+            top: 15px;
+            z-index: 120;
+        }
+
+        .setting {
+            width: 85%;
+            height: 56px;
+            background: #d4d5d7;
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #3c4043;
+            position: relative;
+            top: 30px;
+            left: 20px;
+        }
+
+        .setting input {
+            display: none;
+        }
+
+        .switch {
+            width: 46px;
+            height: 28px;
+            background: #1a73e8;
+            border-radius: 14px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .switch::after {
+            content: "";
+            width: 22px;
+            height: 22px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 3px;
+            right: 3px;
+        }
+        .setting1{
+            width: 90%;
+            height: 100px;
+            position: relative;
+            top: 60px;
+            left: 15px;
+            border-radius: 25px;
+            color: #3c4043;
+            background: #d4d5d7;
+            text-align: center;
+            line-height: 23px;
+            font-size: large;
+            padding-left: 10px;
+            padding-right: 10px;
+            /* text-transform: capitalize; */
+        }
+        .msg{
+            height: 275px;width: 82%;background-color: whitesmoke;
+            position: relative;
+            top: 75px;
+            padding-left: 5%;
+            padding-right: 5%;
+            left: 5%;
+            display: block;
+            border-radius: 10px;
+            overflow: scroll;
+            font-size: large;
+        }
+        .mg{
+            line-height: 30px;
+        }
+
+    </style>
 </head>
-<body>
-    
+<body bgcolor="black">
+   <div class="box">
+    <div class="box1">
+        <div style="width: 450px;height: 60px; background-color: #3D4043;position: fixed;z-index: 100;top: 630px;border-radius: 10px;border: 1px solid #3D4043; box-shadow: 0px 5px 20px rgba(0,0,0,1); color:whitesmoke;line-height: 65px;font-size: 23px; display:flex;">&nbsp;&nbsp;&nbsp;&nbsp;Vecna has left the meeting</div>
+        <div class="b1">
+            <div class="m"><ion-icon name="mic-off-outline"></ion-icon></div>
+            <div class="b2" style="background-image: url(image1.jpeg);background-size: cover;"></div>
+        &nbsp;&nbsp;Eleven
+        </div>
+        <div class="b1">
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="m"><ion-icon name="mic-off-outline"></ion-icon></div>
+            <div class="b2" style="background-image: url(image2.jpeg);background-size: cover; "></div>
+        &nbsp;&nbsp;Jonathan Byers
+        </div>
+        <div class="b1">
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="m"><ion-icon name="mic-off-outline"></ion-icon></div>
+            <div class="b2" style="background-image: url(image3.jpeg);background-size: cover;"></div>
+        &nbsp;&nbsp;Mike Wheeler
+        </div>
+        <div class="b1">
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="m"><ion-icon name="mic-off-outline"></ion-icon></div>
+            <div class="b2" style="background-image: url(image4.jpeg);background-size: cover;"></div>
+        &nbsp;&nbsp;Lucas Sinclair
+        </div>
+        <div class="b1">
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="m"><ion-icon name="mic-off-outline"></ion-icon></div>
+            <div class="b2" style="background-image: url(image5.jpeg);background-size: cover;"></div>
+        &nbsp;&nbsp;Max Mayfield
+        </div>
+        <div class="b1">
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="m"><ion-icon name="mic-off-outline"></ion-icon></div>
+            <div class="b2" style="background-image: url(image6.jpeg);background-size: cover;"></div>
+        &nbsp;&nbsp;Dustin Henderson
+        </div>
+        <div class="b1">
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="m"><ion-icon name="mic-off-outline"></ion-icon></div>
+            <div class="b2" style="background-image: url(image7.jpeg);background-size: cover;"></div>
+        &nbsp;&nbsp;Will Byers
+        </div>
+        <div class="b1">
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="m"><ion-icon name="mic-off-outline"></ion-icon></div>
+            <div class="b3" style="background-color: green;">M</div>
+            <div class="b4" style="background-color: violet;">S</div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20 Others
+        </div>
+        <div class="b1">
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="m"><ion-icon name="barcode-outline"></ion-icon></div>
+            <div class="b2" style="background-image: url(image8.jpeg);background-size: cover;"></div>
+            &nbsp;&nbsp;&nbsp;Duffer Brothers
+        </div>
+    </div>
+    <div class="box2">
+        <div style="width:200px;height: 25px; position: relative;top: 25px;left: 15px; font-size: 25px;">In-call messages</div>
+        
+        <div style="width: 25px; height: 25px; font-size: 30px; text-align: center; position: relative;left: 425px;top: 0px;"><ion-icon name="close-outline"></ion-icon></div>
+        
+        <div><label class="setting">
+            <span>Let everyone send messages</span>
+             <input type="checkbox" checked>
+        <span class="switch"></span>
+            </label>
+
+            <div class="setting1">
+            
+                <span>Unless they're pinned messages can only be seen bypeople in the call when the message is sent. All nessage are deleted when the call end</span>
+            
+        </div>
+<div class="msg">
+
+<pre class="mg"><b>Eleven</b>  4:00AM
+  I Love You Mike</pre>
+
+<pre class="mg"><b>Jonathan Byers</b>  4:01AM
+  Oo Ho Mike mere dost good luck</pre>
+
+<pre class="mg"><b>Lucas Sinclair</b>  4:02AM
+  Hii Max 💕</pre>
+
+<pre class="mg"><b>Max Mayfield</b>  4:03AM
+  Tumse milakar milkar accha laga lucas</pre>
+
+<pre class="mg"><b>Dustin Henderson</b>  4:03AM
+  He dosto agali fight ke liye ready raho</pre>
+
+<pre class="mg"><b>Dustin Henderson</b>  4:05AM
+  Muze kuch to galat lag raha hai yaha</pre>
+
+</div>
+        </div>
+    <div>
+        <input type="text" placeholder="Send a message" style="height:55px; width: 90%;position: relative;top:80px;left: 20px;border-radius: 30px;padding-left: 10px;font-size: large;background-color: #d4d5d7;border: none;" >
+        <ion-icon name="send-outline" style="position: relative;top: 85px;right: 15px; font-size: 20px;"></ion-icon>
+    </div>
+
+    </div>
+                     <div class="box3">
+  <div class="left">
+    <span class="time">4:58 PM</span>
+    <span class="code">cbj-qpkq-idp</span>
+  </div>
+
+  <div class="center">
+    <button class="icon"><i class="fa-solid fa-microphone"></i></button>
+    <button class="icon red"><i class="fa-solid fa-video-slash"></i></button>
+    <button class="icon"><i class="fa-regular fa-closed-captioning"></i></button>
+    <button class="icon"><i class="fa-regular fa-face-smile"></i></button>
+    <button class="icon"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+    <button class="icon"><i class="fa-solid fa-hand"></i></button>
+    <button class="icon"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+    <button class="icon end"><i class="fa-solid fa-phone"></i></button>
+  </div>
+
+  <div class="right">
+    <button class="icon"><i class="fa-solid fa-circle-info"></i></button>
+    <button class="icon"><i class="fa-solid fa-user-group"></i></button>
+    <button class="icon"><i class="fa-solid fa-message"></i></button>
+    <button class="icon"><i class="fa-solid fa-shapes"></i></button>
+    <button class="icon"><i class="fa-solid fa-lock"></i></button>
+  </div>
+</div>
+   </div> 
 </body>
 </html>
