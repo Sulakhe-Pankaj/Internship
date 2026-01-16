@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 13</title>
+    <style>
+        .box{
+            width: 700px;
+            height: 670px;
+            background-image: url(image.png);
+            background-size:cover;float: right;
+            display: flex;
+            overflow: hidden;
+            /* animation-direction: reverse; */
+        }
+        @keyframes run {
+            0%{
+                /* bottom: 0%; */
+                top: 75%;
+                left: 0px;
+            }
+            50%{
+                top:75%;
+                left: 33%;
+                transform: rotate(-5deg);
+            }
+            75%{
+                top: 45%;
+                left: 50%;
+                transform: rotate(-20deg);
+            }
+            100%{
+                top: -20%;
+                left: 85%;
+                transform: rotate(-20deg);
+            }
+
+        }
+        img{
+            width: 150px;
+            position: absolute;
+            bottom: 0px;
+            left: 100%;
+            animation: run 10s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="image.gif" alt="game charactor" title="Pankaj">
+    </div>
+</body>
+</html>

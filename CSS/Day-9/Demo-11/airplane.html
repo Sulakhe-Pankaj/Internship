@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-11</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .box{
+            width: 100%;
+            height: 650px;
+            background-image: url(image.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        img {
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            animation-name: ani;
+            animation-timing-function: linear;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            right: -200px;
+            /* top: 500px; */
+            bottom: -75px;
+        }
+        @keyframes ani{
+            0%{
+                right: 0%;
+                bottom: -75px;
+                transform: rotate(0deg);
+            }
+            16.66%{
+                right: 16.66%;
+                bottom: -75px;
+                transform: rotate(0deg);
+            }
+            33.33%{
+                right: 33.33%;
+                bottom: -30px;
+                transform: rotate(10deg);
+            }
+            49.99%{
+                right: 49.99%;
+                bottom:10% ;
+                transform: rotate(15deg);
+
+            }
+            66.65%{
+                right: 66.65%;
+                transform: rotate(20deg);
+                bottom: 33%;
+            }
+            83.31%{
+                right: 83.31%;
+                transform: rotate(20deg);
+                bottom: 66%;
+            }
+            100%{
+                right: 100%;
+                transform: rotate(20deg);
+                bottom: 100%;
+            }
+        }
+        /* .b1{
+            width: 200px;
+            height: 200px;
+            background-image: url(image1.png);
+            background-size: cover;
+            z-index: 1;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="image1.png" alt="airplane" title="plane">
+    </div>
+</body>
+</html>
