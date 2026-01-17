@@ -6,18 +6,71 @@
     <title>grid</title>
     <style>
         .container{
+            width: 100%;
+            /* height: auto; */
             display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: 150px auto 200px;
+            /* grid-template-columns:100%; */
+            /* grid-template-rows: auto; */
+          grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+            gap: 10px;
         }
-        
+        .header{
+            grid-area: header;
+            width: 100%;
+            height: 150px;
+            background-color: yellow;
+        }
+        .main{
+            width: 100%;
+             height: 100px;
+            background-color: green;
+            grid-area: main;
+        }
+        .sidebar{
+            grid-area: "sidebar";
+            width: 100%;
+            height: auto;
+            background-color: red;
+        }
+        .footer{
+            width: 100%;
+            height: 150px;
+            background-color: pink;
+            grid-area: footer;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header"></div>
-        <div class="main"></div>
-        <div class="footer"></div>
+        <div class="header">
+            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo explicabo voluptatem iste natus laudantium maxime sequi non soluta ratione ipsam, vel repellat! Sunt officia, deserunt nobis ratione aut asperiores!</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque doloremque iure accusantium, ad, distinctio autem praesentium, debitis exercitationem dignissimos sequi molestiae odio neque quia alias minus reiciendis fugit dolorum.</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo explicabo voluptatem iste natus laudantium maxime sequi non soluta ratione ipsam, vel repellat! Sunt officia, deserunt nobis ratione aut asperiores!</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque doloremque iure accusantium, ad, distinctio autem praesentium, debitis exercitationem dignissimos sequi molestiae odio neque quia alias minus reiciendis fugit dolorum.</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo explicabo voluptatem iste natus laudantium maxime sequi non soluta ratione ipsam, vel repellat! Sunt officia, deserunt nobis ratione aut asperiores!</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque doloremque iure accusantium, ad, distinctio autem praesentium, debitis exercitationem dignissimos sequi molestiae odio neque quia alias minus reiciendis fugit dolorum.</h1> -->
+        </div>
+        <div class="main">
+            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo explicabo voluptatem iste natus laudantium maxime sequi non soluta ratione ipsam, vel repellat! Sunt officia, deserunt nobis ratione aut asperiores!</h1>
+            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque doloremque iure accusantium, ad, distinctio autem praesentium, debitis exercitationem dignissimos sequi molestiae odio neque quia alias minus reiciendis fugit dolorum.</h1> -->
+        </div>
+        <div class="sidebar"></div>
+
+        <div class="footer">
+            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo explicabo voluptatem iste natus laudantium maxime sequi non soluta ratione ipsam, vel repellat! Sunt officia, deserunt nobis ratione aut asperiores!</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque doloremque iure accusantium, ad, distinctio autem praesentium, debitis exercitationem dignissimos sequi molestiae odio neque quia alias minus reiciendis fugit dolorum.</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo explicabo voluptatem iste natus laudantium maxime sequi non soluta ratione ipsam, vel repellat! Sunt officia, deserunt nobis ratione aut asperiores!</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque doloremque iure accusantium, ad, distinctio autem praesentium, debitis exercitationem dignissimos sequi molestiae odio neque quia alias minus reiciendis fugit dolorum.</h1> -->
+
+            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo explicabo voluptatem iste natus laudantium maxime sequi non soluta ratione ipsam, vel repellat! Sunt officia, deserunt nobis ratione aut asperiores!</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque doloremque iure accusantium, ad, distinctio autem praesentium, debitis exercitationem dignissimos sequi molestiae odio neque quia alias minus reiciendis fugit dolorum.</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo explicabo voluptatem iste natus laudantium maxime sequi non soluta ratione ipsam, vel repellat! Sunt officia, deserunt nobis ratione aut asperiores!</h1> -->
+            <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque doloremque iure accusantium, ad, distinctio autem praesentium, debitis exercitationem dignissimos sequi molestiae odio neque quia alias minus reiciendis fugit dolorum.</h1> -->
+        </div>
     </div>
 </body>
 </html>

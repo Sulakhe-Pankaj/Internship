@@ -1,0 +1,159 @@
+.main{
+    width: 100%;
+    height: auto;
+    float: left;
+    /* background-color: yellow; */
+}
+.menu{
+    width: 100%;height: 75px;
+    background-color: rgba(229, 230, 236, 01);
+    opacity: 90%;
+    position: fixed;
+    overflow: scroll;z-index: 100;
+}
+.logo{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.menu_option{
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+.menu_option ul li{
+    display: inline-block;
+    padding: 13px 0px 0px 30px;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+    color: rgba(13, 13, 13, 0.65);
+}
+.logo img{
+    margin: 7.5px 0px 0px 20px;
+}
+.button{
+    position: absolute;
+    top :20px;
+    right: 20px;
+    height: 30px;
+    width: 120px;
+    background-color: red;
+    border: none;
+    color:whitesmoke;
+}
+ul{
+    text-decoration: none;
+}
+/*       header completed */
+
+.slider{
+    width: 100%;
+    height: 745px;
+    float: left;
+    animation: ani 10s linear infinite;
+    background-size: cover;
+}
+@keyframes ani{
+    0% {background-image: url("images/image1.jpg" ) ; background-size: cover;}
+    25% {background-image: url("images/image2.jpg" ) ; background-size: cover;}
+    50% {background-image: url("images/image3.jpg" ) ; background-size: cover;}
+    75% {background-image: url("images/image4.jpg" ) ; background-size: cover;}
+    100% {background-image: url("images/image5.jpg" ) ; background-size: cover;}
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+.search_bar{
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 10%;
+    bottom: 75px;
+    border: 10px solid rgba(229, 230, 236, 01);
+    box-sizing: border-box;
+}
+.filter_box{
+    height: 100%;width: 22.5%;float: left;
+    margin: 0px 0px 0px 2%;
+    align-items: center;
+    line-height: 30px;
+}
+#date{
+    width: 49%;
+    height: 30px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+#select_property{
+    width: 95%;height: 30px;
+    color: black;
+    margin: 0px 0px 0px 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+#lable{
+    color: black;
+    font-size: normal;
+    margin: 0px 0px 0px 10px;
+}
+#rooms{
+    width: 100%;
+    height: 30px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+#lable1{
+    font-size: 13px;
+    color: black;
+}
+#promo{
+    width: 65%;
+    height: 30px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+#Search_button{
+    width: 27%;
+    height: 30px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 3px;
+    border: none;
+    margin: 0px 0px 0px 2%;
+}
+/* images section completed */
+.info{
+    width:100%;
+    height: auto;
+    float: left;
+}
+.para{
+    margin: 10px 150px 10px 150px ;
+
+}
+.para2{
+    margin: 10px 150px 10px 150px ;
+    height: auto;float: left;width: 80%;
+    /* background-color: blue; */
+
+    gap: 20px;
+}
+.information{
+    height: 440px;width: 46%;float: left;
+    padding: 5px 2% 5px 2%;
+    opacity: 60%;
+}
+.information_photo{
+    height: 450px;width: 50%;float: left;
+    /* opacity: 90%; */
+}
