@@ -42,9 +42,11 @@ a{
     background-color: red;
     border: none;
     color:whitesmoke;
+    transition: 0.5s;
 }
 .button:hover{
     color: black;
+    transform: scale(1.1);
 }
 ul{
     text-decoration: none;
@@ -136,17 +138,20 @@ ul{
 }
 /* images section completed */
 .info{
-    width:100%;
+    width:90%;
     height: auto;
     float: left;
+
 }
 .para{
     margin: 10px 150px 10px 150px ;
+    padding-left: 150px;
 
 }
 .para2{
     margin: 10px 150px 10px 150px ;
-    height: auto;float: left;width: 80%;
+    height: auto;float: left;width: auto;
+    padding-left: 150px;
     /* background-color: blue; */
 
     gap: 20px;
@@ -173,9 +178,10 @@ ul{
     color: black;
 }
 .facilities{
-    width: 100%;margin: 50px 0px 0px 0px;
+    width: 92%;margin: 50px 0px 0px 0px;
     height: 350px;float: left;
     background-color: rgb(227, 227, 234);
+    padding-left: 110px;
 }
 .facility{
     width: 70%;float: left;
@@ -303,8 +309,8 @@ ul{
     background-color: rgb(213, 215, 222);
 }
 #futer{
-    width: 100%;
-    height: 30px;position: fixed;
+    width: 90%;
+    height: 30px;position: relative;
     bottom: 0px;
     background-color: #333;z-index: 100;
     color: #888887;
@@ -312,4 +318,612 @@ ul{
     padding-top:20px ;
     display: flex;
     gap: 150px;
+    overflow: hidden;
+}
+/* ========================  RESPONSIVE LAYOUT FOR ALL DEVICES ========================= */
+
+/* ================= SMALL PHONES ================= */
+@media screen and (max-width: 576px){
+
+  .slider{
+    height: 420px;
+  }
+
+  .search_bar{
+    width: 95%;
+    left: 2.5%;
+    bottom: 10px;
+  }
+
+  .para pre{
+    font-size: 20px !important;
+  }
+
+  .para p{
+    font-size: 16px !important;
+  }
+
+  .facility_list ul{
+    line-height: 35px !important;
+  }
+
+  #futer{
+    font-size: 12px;
+  }
+}
+
+/* ================= TABLETS ================= */
+@media screen and (max-width: 992px){
+
+  .menu_option ul li{
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .slider{
+    height: 600px;
+  }
+
+  .search_bar{
+    width: 90%;
+    left: 5%;
+  }
+
+  .information,
+  .information_photo{
+    width: 100%;
+    float: none;
+  }
+
+  .facilities{
+    height: auto;
+  }
+
+  .facility{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .facility_list{
+    width: 100%;
+    float: none;
+  }
+
+  .container_bggrey{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .locationbox{
+    width: 100%;
+    float: none;
+    margin-bottom: 15px;
+  }
+}
+
+/* ================= SMALL LAPTOPS ================= */
+@media screen and (max-width: 1200px){
+
+  .para,
+  .para2{
+    margin: 10px 5%;
+    width: 90%;
+  }
+
+  .facility{
+    width: 85%;
+    margin-left: 7.5%;
+  }
+
+  .gallery{
+    width: 90%;
+    padding: 40px 5%;
+  }
+
+  .photos{
+    width: 33.33%;
+  }
+}
+
+/* ================= BIG DESKTOP ================= */
+@media screen and (min-width: 1400px){
+
+  .para,
+  .para2{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .facility{
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .gallery{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* ====================================================ROOM SECTION===================================================================  */
+.rooms_details{
+    width: 75%;
+    height: auto;
+    padding: 50px 10% 0px 15%;
+    /* background-color: yellow; */
+    /* padding-bottom: 100px; */
+    float: left;
+}
+.rooms_details h1{
+    margin-bottom: 15px;
+    font-weight: 1;
+    color: #58595b;
+    letter-spacing: 1px;
+}
+.rooms_details h2{
+    margin-bottom: 20px;
+    font-weight: 1;
+    font-size: 20px;
+    color: #58595b;
+    /* letter-spacing: 1px; */
+}
+.rooms_details strong{
+    font-weight: 1;
+    color: #888888;
+    margin-bottom: 10px;
+}
+.rooms_details p{
+    color: #888888;
+    margin-bottom: 10px;
+}
+.room-image-outer{
+    width: 100%;height:auto;
+    margin-top: 50px;
+    /* background-color: green; */
+    display: inline-block;
+}
+.room-image-inner{
+    display: inline-block;
+    width: 100%;
+    height: 350px;
+    margin-left: -15;
+    margin-right: -15;
+    /* background-color: blue; */
+}
+.room-p{
+    padding: 0px 15px;
+    width: 30.68%;
+    /* background-color: pink; */
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+.roomphoto{
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    position: relative;
+}
+.roomphoto img{
+    transition: 0.5s;
+}
+.roomphoto img:hover{
+    transform: scale(1.1);
+}
+.room-info{
+    width: 80%;
+    margin: 0px 20px;
+    height: auto;
+    padding: 25px 15px 11px;
+    background-color: #161616;
+    text-align: justify;
+    position: relative;
+    bottom: 40px;
+    border-top: 3px #e0b806 solid;
+    transition: 0.5s;
+}
+.room-info:hover{
+    border-top: 3px whitesmoke solid;
+}
+.roomtext{
+    background-color: #161616;
+    color: #888888; 
+    font-size: 15px;
+    line-height: 25px;
+}
+.room-info h2{
+    color: #888888;
+    margin: 0px;
+    transition: 0.5s;
+}
+.room-info h2:hover{
+    color: #e0b806;
+    transition: linear;
+}
+.room-m{
+    padding: 0px 15px;
+    width: 45%;
+    /* background-color: pink; */
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+.room-image-inner-m{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-left: -15;
+    margin-right: -15;
+    /* background-color: blue; */
+}
+.roomtext-m{
+    background-color: #161616;
+    color: #888888; 
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    height: 150px;
+}
+#INQUIRE{
+    height: 50px;
+    width: auto;
+    position: relative;
+    top: 25px;
+}
+#INQUIRE button{
+    height: 30px; 
+    background-color: red;
+    color: #fff; 
+    border: 5px solid red;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+#INQUIRE button:hover{
+    transform: scale(1.1);
+    color: #333;
+}
+
+/* ===================== RESPONSIVE ROOM SECTION ===================== */
+
+/* Large tablets and small laptops */
+@media screen and (max-width: 1200px){
+
+  .rooms_details{
+    width: 90%;
+    padding: 40px 5% 80px 5%;
+  }
+
+  .room-p{
+    width: 46%;
+    margin-bottom: 30px;
+  }
+
+  .room-m{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .room-image-inner{
+    height: auto;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 992px){
+
+  .rooms_details{
+    width: 100%;
+    padding: 30px 20px 70px 20px;
+  }
+
+  .room-p{
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+
+  .room-m{
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+
+  .room-info{
+    width: 90%;
+    margin: 0 auto;
+    bottom: 30px;
+  }
+
+  .room-image-inner,
+  .room-image-inner-m{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Mobile landscape and big phones */
+@media screen and (max-width: 768px){
+
+  .rooms_details h1{
+    font-size: 22px;
+  }
+
+  .rooms_details h2{
+    font-size: 18px;
+  }
+
+  .roomphoto{
+    height: auto;
+  }
+
+  .roomphoto img{
+    width: 100%;
+    height: auto;
+  }
+
+  .roomtext-m{
+    height: auto;
+    padding: 15px;
+  }
+
+  #INQUIRE{
+    top: 10px;
+    text-align: center;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 576px){
+
+  .rooms_details{
+    padding: 20px 10px 60px 10px;
+  }
+
+  .room-info{
+    width: 100%;
+    margin: 0;
+    bottom: 20px;
+  }
+
+  .roomtext{
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #INQUIRE button{
+    width: 100%;
+    height: 40px;
+  }
+}
+
+/* ====================SPA ====================== */
+
+#spa_facilities{
+  margin-bottom: 15px;
+}
+#spa_list{
+  padding: 10px 10px 10px 20px;
+}
+#spa_list li {
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #888;
+}
+#spa_list li:hover{
+  color: #e0b806;
+  transform: scalex(0.98);
+}
+#spa_list li::before {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 15px;
+    height: 1px;
+    content: "";
+    background: #ffd105;
+}
+
+.slider_spa{
+    width: 100%;
+    height: 745px;
+    float: left;
+    animation: spa 10s linear infinite;
+    background-size: cover;
+}
+@keyframes spa{
+    0% {background-image: url("https://www.ohotelsindia.com/pune/images/2db4b4255785791bf352e4693c1dcf1c.jpg" ) ; background-size: cover;}
+    25% {background-image: url("https://www.ohotelsindia.com/pune/images/2c3a48706dac064fe98fa622fb55e5eb.jpg" ) ; background-size: cover;}
+    50% {background-image: url("https://www.ohotelsindia.com/pune/images/524c6e04fc74d2adeb059ef0b449e6f0.jpg" ) ; background-size: cover;}
+    75% {background-image: url("https://www.ohotelsindia.com/pune/images/26718a61bc1d1af50bed190c732efce2.jpg" ) ; background-size: cover;}
+    100% {background-image: url("https://www.ohotelsindia.com/pune/images/1bc96e777407ebfe680890754519f718.jpg" ) ; background-size: cover;}
+}
+
+/* =========================== SPACIAL OFFERS =========================== */
+
+.offers{
+  /* background-color: yellow; */
+  width: 90%;
+  height: auto;
+  padding: 15px;
+  float: left;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.offer_info{
+  width: 34%;
+  height: auto;
+  /* background-color: green; */
+  float: left;
+  clear: right;
+  padding: 0px 15px;
+}
+.offer_image{
+  width: 36%;
+  height: auto;
+  padding: 0px 15px 0px 0px;
+  /* background-color: #000 */
+}
+
+.offer_info p{
+  color: #888;
+  line-height: 24px;
+  margin: 0px 0px 10px;
+}
+.offer_info ul {
+  margin: 0px;
+  padding: 15px;
+  line-height: 20px;
+  font-size: 15px;
+}
+.offer_header h3{
+  font-size: 22px;
+  width: auto;
+  height: auto;
+  font-weight: 500;
+  margin: 50px 0px 15px 0px;
+  color: #ffd105;float: left;
+  text-transform: uppercase;
+}
+.booking_button{
+  width:21%;
+  height: 275px;
+  background-color: #333;
+  float: left;
+  margin-left: 15px;
+  padding: 5px 15px 5px 15px;
+}
+.booking_button center {
+  padding: 90px 0px 0px 0px;
+  line-height: 45px;
+}
+.booking_button center button{
+  width: 100%;
+  height: 33px;
+  border: none;
+  background-color: red;
+  color: white;
+}
+
+.slider_offer{
+    width: 100%;
+    height: 745px;
+    float: left;
+    animation: offer 15s linear infinite;
+    background-size: cover;
+}
+@keyframes offer{
+    0% {background-image: url("https://www.ohotelsindia.com/pune/images/47eacf4406271076e531f546e2f99227.jpg" ) ; background-size: cover;}
+    25% {background-image: url("https://www.ohotelsindia.com/pune/images/f016f4048d4416ea712d96baccc58629.jpg" ) ; background-size: cover;}
+    50% {background-image: url("https://www.ohotelsindia.com/pune/images/4eecbb82c67e20537742a7ee2ee7d29f.jpg" ) ; background-size: cover;}
+    75% {background-image: url("https://www.ohotelsindia.com/pune/images/f75d7861dd0cbf5faed8eff9ce06e2fe.jpg" ) ; background-size: cover;}
+    100% {background-image: url("https://www.ohotelsindia.com/pune/images/06013cabcb42e91c0633166f5e49fbb4.jpg" ) ; background-size: cover;}
+}
+
+/* ================================ Gallery ============================================ */
+
+.gallery{
+  width: 80%;
+  height: auto;
+  padding: 0px 10% 50px 10%;
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: 20px;
+  grid-template-areas:
+          "gallery_img"
+          "photogallery";
+}
+.photogallery{
+  padding: 20px 10% 0px 10%;
+  width: 80%;
+  height: auto;
+  /* background-color: red; */
+  grid-area:"photogallery";
+}
+.photogallery h1{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 36px;
+    color: #58595b;
+    font-weight: 200;
+    line-height: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.gallery_img{
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  grid-area: "gallery_img";
+}
+.gallery_img img{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.gallery_img img:hover{
+  transform: scale(1.06);
+}
+
+.menu_option_gallery{
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+.menu_gallery{
+    width: 100%;height: 75px;
+    background-color: rgba(229, 230, 236, 1);
+    opacity: 95%;
+    position: fixed;
+    z-index: 100;
+}
+.menu_option_gallery ul li{
+    display: inline-block;
+    padding: 13px 0px 0px 30px;
+    font-size: 13px;
+}
+
+/* ================================= contact section ============================== */
+
+ .contact_details_secsion{
+    width: 80%;
+    height: auto;
+    padding: 50px 10% 0px 10%;
+    /* background-color: yellow; */
+    /* padding-bottom: 100px; */
+    float: left;
+}
+.contact_details_secsion h1{
+    margin-bottom: 15px;
+    font-weight: 1;
+    color: #58595b;
+    letter-spacing: 1px;
+}
+.contact_details_secsion h2{
+    margin-bottom: 20px;
+    font-weight: 1;
+    font-size: 20px;
+    color: #58595b;
+    /* letter-spacing: 1px; */
+}
+.contact_details_secsion strong{
+    font-weight: 1;
+    color: #888888;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.blog_outer{
+  width: 100%;
+  height: 275px;
+  /* padding: 15px 0px 0px 0px; */
+  /* background-color: greenyellow; */
 }
