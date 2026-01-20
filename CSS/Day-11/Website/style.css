@@ -194,7 +194,7 @@ ul{
     float: left;
     font-size: large;
 }
-.gallery{
+.gallery1{
     width: 79%;height: 300px;float: left;
     padding: 50px 10% 100px 11%;
 }
@@ -582,119 +582,6 @@ ul{
 #INQUIRE button:hover{
     transform: scale(1.1);
     color: #333;
-}
-
-/* ===================== RESPONSIVE ROOM SECTION ===================== */
-
-/* Large tablets and small laptops */
-@media screen and (max-width: 1200px){
-
-  .rooms_details{
-    width: 90%;
-    padding: 40px 5% 80px 5%;
-  }
-
-  .room-p{
-    width: 46%;
-    margin-bottom: 30px;
-  }
-
-  .room-m{
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .room-image-inner{
-    height: auto;
-  }
-}
-
-/* Tablets */
-@media screen and (max-width: 992px){
-
-  .rooms_details{
-    width: 100%;
-    padding: 30px 20px 70px 20px;
-  }
-
-  .room-p{
-    width: 100%;
-    float: none;
-    padding: 0;
-  }
-
-  .room-m{
-    width: 100%;
-    float: none;
-    padding: 0;
-  }
-
-  .room-info{
-    width: 90%;
-    margin: 0 auto;
-    bottom: 30px;
-  }
-
-  .room-image-inner,
-  .room-image-inner-m{
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-/* Mobile landscape and big phones */
-@media screen and (max-width: 768px){
-
-  .rooms_details h1{
-    font-size: 22px;
-  }
-
-  .rooms_details h2{
-    font-size: 18px;
-  }
-
-  .roomphoto{
-    height: auto;
-  }
-
-  .roomphoto img{
-    width: 100%;
-    height: auto;
-  }
-
-  .roomtext-m{
-    height: auto;
-    padding: 15px;
-  }
-
-  #INQUIRE{
-    top: 10px;
-    text-align: center;
-  }
-}
-
-/* Small phones */
-@media screen and (max-width: 576px){
-
-  .rooms_details{
-    padding: 20px 10px 60px 10px;
-  }
-
-  .room-info{
-    width: 100%;
-    margin: 0;
-    bottom: 20px;
-  }
-
-  .roomtext{
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  #INQUIRE button{
-    width: 100%;
-    height: 40px;
-  }
 }
 
 /* ====================SPA ====================== */

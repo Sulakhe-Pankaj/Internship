@@ -1,0 +1,247 @@
+/* ================= GLOBAL SAFETY FIXES ================= */
+html, body{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+@media screen and (max-width: 992px){
+  .logo, .menu_option{
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .menu{
+    height: auto;
+    position: relative;
+  }
+
+  .menu_option ul li{
+    display: block;
+    padding: 8px 0;
+  }
+
+  .button{
+    position: relative;
+    margin: 10px auto;
+    right: 0;
+    display: block;
+  }
+}
+
+/* ================= SLIDER & SEARCH BAR ================= */
+@media screen and (max-width: 768px){
+  .slider, .slider_spa, .slider_offer{
+    height: 480px;
+  }
+
+  .search_bar{
+    width: 90%;
+    left: 5%;
+    height: auto;
+    bottom: 20px;
+  }
+
+  .filter_box{
+    width: 100%;
+    float: none;
+    margin: 10px 0;
+  }
+
+  #date, #select_property, #rooms, #promo, #Search_button{
+    width: 100%;
+  }
+}
+
+/* ================= INFO SECTION ================= */
+@media screen and (max-width: 992px){
+  .info{
+    width: 100%;
+    float: none;
+  }
+
+  .para, .para2{
+    width: 90%;
+    margin: 20px auto;
+    padding-left: 0;
+  }
+
+  .information,
+  .information_photo{
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+
+  #boton{
+    left: 0;
+    bottom: 0;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+/* ================= FACILITIES ================= */
+@media screen and (max-width: 992px){
+  .facilities{
+    width: 100%;
+    padding-left: 0;
+    height: auto;
+  }
+
+  .facility{
+    width: 90%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .facility_list{
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+}
+
+/* ================= GALLERY (OLD SECTION) ================= */
+@media screen and (max-width: 992px){
+  .gallery1{
+    width: 100%;
+    padding: 20px 5%;
+  }
+
+  .photos{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .photos{
+    width: 100%;
+  }
+}
+
+/* ================= CONTACT INFO ================= */
+@media screen and (max-width: 992px){
+  .contact_info{
+    width: 100%;
+    padding: 20px 5%;
+    float: none;
+  }
+
+  .contact{
+    width: 100%;
+    height: auto;
+    float: none;
+    flex-direction: column;
+  }
+
+  #contact{
+    width: 100%;
+    float: none;
+  }
+
+  .social{
+    width: 100%;
+    height: auto;
+    float: none;
+    flex-direction: column;
+  }
+
+  #social1,
+  #social2,
+  #social3{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    float: none;
+  }
+
+  #social2, #social3{
+    height: 220px;
+  }
+}
+
+/* ================= FOOTER ================= */
+@media screen and (max-width: 992px){
+  #futer{
+    width: 100%;
+    padding: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+/* ================= ROOM SECTION ================= */
+@media screen and (max-width: 992px){
+  .rooms_details{
+    width: 100%;
+    padding: 30px 5%;
+  }
+
+  .room-p, .room-m{
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+
+  .room-info{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* ================= OFFERS ================= */
+@media screen and (max-width: 992px){
+  .offers{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .offer_info,
+  .offer_image,
+  .booking_button{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .booking_button{
+    height: auto;
+  }
+}
+
+/* ================= NEW GALLERY GRID ================= */
+@media screen and (max-width: 992px){
+  .gallery{
+    width: 100%;
+    padding: 20px 5%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photogallery{
+    width: 100%;
+    padding: 20px 5%;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .gallery{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= CONTACT DETAILS PAGE ================= */
+@media screen and (max-width: 992px){
+  .contact_details_secsion{
+    width: 100%;
+    padding: 30px 5%;
+  }
+
+  .blog_outer{
+    height: auto;
+  }
+}
