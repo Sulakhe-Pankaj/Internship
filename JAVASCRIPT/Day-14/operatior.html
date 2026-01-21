@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ========================== Arithmatic Operators ========================
+        var a = 100;
+        var b = 10;
+        var c = a + b;
+        document.write('<br>',c)
+        var c = a - b;
+        document.write('<br>',c)
+        var c = a * b;
+        document.write('<br>',c)
+        var c = a / b;
+        document.write('<br>', c)
+        var c = a % b;
+        document.write('<br>',c)
+
+        // ============================= Assignment Operator ========================
+        
+        var prod = 0;
+            prod += 100; //100
+            prod -= 50; //50 (100 - 50)
+            prod *= 10; // 500 (50 * 10)
+            prod /= 5; // 100 (500 / 5)
+            prod %= 2; // 0 (100 % 2)
+        document.write('<p> this is the ans : </p>', prod)
+
+        // ============================= Increament Decreament Operators =================
+
+        var inc = 100;
+        inc ++
+        ++ inc
+        ++ inc
+        document.write('<br>',++ inc)
+        document.write('<br>',inc ++)
+        document.write('<br>',inc)
+
+         var inc = 100;
+        inc --
+        -- inc
+        -- inc
+        document.write('<br>',-- inc)
+        document.write('<br>',inc --)
+        document.write('<br>',inc)
+
+        // ========================== True or False Operators ==============================
+        
+        document.write('<br>', 100 == 100)
+        document.write('<br>', 10 == 100)
+        document.write('<br>', 100 == 10)
+        document.write('<br>', 100 == '100')
+
+        // =======================================
+
+        document.write('<br>', 100 === 100)
+        document.write('<br>', 100 === 10)
+        document.write('<br>', 100 ==='100')
+
+        document.write('<br>', 100 < 10)
+        document.write('<br>', 100 > 10)
+        document.write('<br>', 100 > 10)
+        document.write('<br>', 100 < 10)
+
+        document.write('<br>', 100 <= 100)
+        document.write('<br>', 100 >= 100)
+
+        document.write('<br>', 100 != 10)
+
+        // =============================Logical Operator ===============================
+
+        // { && || ! } ------------------ 
+        
+        // { && } --------------- 1
+
+        // T T = T
+        // T F = F
+        // F T = F 
+        // F F = F
+
+        alert( 10 == 10 && 1 == 1)
+        alert( 10 == 10 && 1 == 1 && 20 == 10)
+        
+        // { || } --------------- 2
+
+        // T T = T
+        // T F = T
+        // F T = T
+        // F F = F
+
+        alert( 10 == 10 || 1 == 1)
+        alert( 10 == 10 || 1 == 1 || 20 == 10)
+
+        // { ! } ------------------ 3
+
+        // T = F
+        // F = T
+
+        alert( ! (10 == 10 || 1 == 1 || 20 == 10))
+
+        // =========================== Concatination Operator =======================
+
+        var a = "Pankaj "
+        var b = "Sulakhe"
+        var Name = a+b
+        alert(Name)
+
+        var data = 20 + 20 + '40'
+        document.write('<br>',data)
+
+    </script>
+</body>
+</html>
