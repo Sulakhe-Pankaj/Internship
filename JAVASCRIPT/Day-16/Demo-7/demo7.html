@@ -1,0 +1,228 @@
+<!-- Q-1: Print numbers from 1 to 10 using while loop.
+Q-2: Print even numbers from 2 to 20 using while loop.
+Q-3: Print the reverse numbers from 10 to 1 using while loop.
+Q-4: Calculate the sum of numbers from 1 to 100 using while loop.
+Q-5: Find the factorial of a number using while loop. -->
+
+<!-- ???? Do...While Loop Questions:
+Q-7: Print the multiplication table of 5 using do...while.
+Q-6: Print numbers from 1 to 5 using do...while.
+Q-8: Take user input using prompt() until user enters number > 0 (using do...while).
+Q-9: Display first 10 odd numbers using do...while.
+Q-10: Print characters from a string one by one using do...while. -->
+
+<!-- ???? For Loop Questions:
+Q-11: Print numbers from 1 to 100 using for loop.
+Q-12: Print squares of numbers from 1 to 10 using for loop.
+Q-13: Generate and print the multiplication table of any number using for.
+Q-14: Count how many even numbers are there from 1 to 50 using for.
+Q-15: Calculate sum of digits of a number using for loop.
+Q-16: Print each character from a given string using for loop.
+Q-17: Print Fibonacci series up to 10 terms using for loop.
+Q-18: Print all prime numbers from 1 to 50 using for loop. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="display: flex;justify-content: center;">
+    <script>
+        // Q-1: Print numbers from 1 to 10 using while loop.
+        i = 1;
+        while (i <= 10) {
+            document.write('<br>' + i)
+            i++;
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-2: Print even numbers from 2 to 20 using while loop.
+        j = 2;
+        while (j <= 20) {
+            document.write('<br>' + j)
+            j += 2
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-3: Print the reverse numbers from 10 to 1 using while loop.
+        k = 10;
+        while (k >= 1) {
+            document.write('<br>' + k)
+            k--
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-4: Calculate the sum of numbers from 1 to 100 using while loop.
+        l = 1
+        sum = 0;
+        while (l <= 100) {
+            sum = sum + l;
+            document.write('<br>' + l + '&nbsp' + ":" + '&nbsp', +sum)
+            l++
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-5: Find the factorial of a number using while loop. -->
+        //     m = prompt("Enter the number here...");
+        //     fact = 1;
+
+        //     while (m > 0) {
+        //         fact = fact * m;
+        //         m--;
+        //     }
+
+        // document.write("Factorial = " + fact);
+    </script>
+
+    <br>
+    <br>
+
+    <script>
+        // Q-7: Print the multiplication table of 5 using do...while.
+        i = 1;
+        multy = 1
+        do {
+            m = i * 5
+            multy = multy * m
+            document.write('<br>' + i + " : " + m + " : " + multy)
+            i++;
+        } while (i <= 10)
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-6: Print numbers from 1 to 5 using do...while.
+        n = 1;
+        do {
+            document.write('<br>', n)
+            n++;
+        } while (n <= 5);
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-8: Take user input using prompt() until user enters number > 0 (using do...while).
+        let p;
+        do {
+            p = prompt("Enter a number greater than 0:");
+
+            if (p <= 0) {
+                document.write("Invalid input. Try again.<br>");
+            }
+
+        } while (p <= 0);
+
+        document.write("Valid number entered: " + p);
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-9: Display first 10 odd numbers using do...while.
+        i = 0;
+        count = 0
+        do {
+            i = i + 1;
+            document.write('<br>', i)
+            i++;
+            count++;
+        } while (count < 10)
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-10: Print characters from a string one by one using do...while. -->
+        i = 0;
+        str = "pankaj"
+        do {
+            document.write('<br>' + str[i])
+            i++;
+        } while (i < (str.length))
+
+    </script>
+    <br>
+    <br>
+    <script>
+
+        // Q-11: Print numbers from 1 to 100 using for loop.
+        for (i = 1; i <= 100; i++) {
+            document.write('<br>' + i)
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-12: Print squares of numbers from 1 to 10 using for loop.
+        for (i = 1; i <= 100; i++) {
+            var squ = i * i
+            document.write('<br>' + i + '&nbsp' + 'sq = ' + squ)
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-13: Generate and print the multiplication table of any number using for.
+        var num = prompt('Enter table number here... : ');
+        for (i = 1; i <= 10; i++) {
+            var table = num * i
+            document.write('<br>' + i + '&nbsp' + 'X' + '&nbsp' + num + '&nbsp' + '=' + '&nbsp' + table)
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-14: Count how many even numbers are there from 1 to 50 using for.
+        for (i = 1; i <= 50; i++) {
+            if (i % 2 == 0) {
+                document.write('<br>' + i)
+            }
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-15: Calculate sum of digits of a number using for loop.
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-16: Print each character from a given string using for loop.
+        var stri = prompt('enter your first name here : ')
+        for (i = 0; i < (stri.length); i++) {
+            name = stri[i];
+            document.write('<br>' + name + '&nbsp')
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-17: Print Fibonacci series up to 10 terms using for loop.
+        let a = 0, b = 1;
+
+        for (let i = 1; i <= 10; i++) {
+            document.write(a + "<br>");
+            let next = a + b;
+            a = b;
+            b = next;
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        // Q-18: Print all prime numbers from 1 to 50 using for loop. -->
+
+
+    </script>
+</body>
+
+</html>
