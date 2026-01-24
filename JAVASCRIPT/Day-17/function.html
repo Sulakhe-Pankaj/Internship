@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function in javascript
+
+        // 1. Normal Function
+        function add(){
+            var a = 200;
+            var b = 100;
+            var c = a + b;
+            document.write('<br>' +c)
+        } 
+        // call
+        add()
+
+        // 2. Parameterise Function
+        function para(a , b){
+            var c = a + b;
+            document.write('<br>' +c)
+        }
+        // call
+        para(1000 , 2000)
+        para(7800.09 , 20.90)
+
+        function name(){
+            var fname = 'Pankaj ';
+            var lname = 'Sulakhe';
+            var fullname = fname  + lname;
+            return fullname;
+        } 
+        var a = name();
+        document.write('<br>' +a)
+
+        // function in expretion
+        var ab = function demo(){
+            document.write('<br>' +'welcome')
+        }
+        // call
+        ab();
+
+        // ananomues function
+        var ab = function (){
+            document.write('<br>' +'welcome')
+        }
+        // call
+        ab();
+
+        // arrow funtion
+        var ab =()=>{
+            document.write('<br>' +'welcome')
+        }
+        // call
+        ab()
+
+        // nested function
+        var ab =()=>{
+            var ac =()=>{
+            document.write('<br>' +'welcome')
+        }
+        // call
+        ac()
+        }
+        ab()
+        
+    </script>
+</body>
+</html>

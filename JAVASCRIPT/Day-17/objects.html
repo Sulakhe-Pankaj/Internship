@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: center; line-height: 50px;">
+    <script>
+        var obj = {
+            name:'pankaj',
+            email:'pankajsulakhe@gmail.com',
+            phone:1234353534
+        }
+        document.write('<br>'+obj.phone)
+        document.write('<br>'+obj.name)
+        document.write('<br>'+obj.email)
+        console.log(obj)
+        for(key in obj){
+            document.write('<br>'+key)
+            document.write(' : '+obj[key])
+        }
+        var obj = new Object();
+        obj.xyz='pankaj'
+        obj.xyk='sulakhe'
+        console.log(obj)
+    </script>
+</body>
+</html>
