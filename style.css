@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #0e1538;
+}
+
+.home_page {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 100px;
+    background-color: yellow;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    gap: 10px;
+}
+
+.header {
+    grid-area: header;
+    background-color: yellow;
+    height: 100px;
+    width: 100%;
+}
+
+.navbar {
+    width: 98%;
+    height: 100px;
+    padding: 0px 0px 0px 2%;
+    height: 100%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'logo nav_list';
+    gap: 25px;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-rows: 1fr;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: green;
+    border-radius: 50%;
+    width: 100px;
+    height: 100%;
+}
+
+.nav_list {
+    grid-area: nav_list;
+    background-color: blue;
+    width: 97%;
+    padding-right: 3%;
+    height: 100px;
+}
+
+#nav_list_option {
+    list-style: none;
+    display: flex;
+    column-gap: 100px;
+    justify-content: end;
+    margin: 0px;
+    padding: 40px 0px 40px 0px;
+}
+
+.main {
+    grid-area: main;
+    background-color: red;
+    width: 100%;
+    height: 500px
+}
+
+.footer {
+    grid-area: footer;
+    background-color: pink;
+    width: 100%;
+    height: 100px;
+}
