@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect,  redirect, url_for
+
 import mysql.connector
 import hashlib
 
@@ -13,12 +14,12 @@ db = mysql.connector.connect(
 
 cursor = db.cursor()
 
-@app.route("/index")
+@app.route("/")
 def home():
     return render_template("index.html")
 
 @app.route("/login")
-def signup_page():
+def login_page():
     return render_template("login.html")
 
 @app.route("/signup")
@@ -37,7 +38,7 @@ def signup():
             (username, email, password)
         )
         db.commit()
-        return "Signup successful"
+        return redirect(url_for("home"))
     except:
         return "Email already exists"
 
@@ -50,7 +51,7 @@ def login():
     user = cursor.fetchone()
 
     if user:
-        return f"Welcome {user[1]}"
+        return redirect(url_for("home"))  # Redirect to index page
     else:
         return "Invalid Creadential"
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="data1">Welcome Pankaj</h1>
+    <h1 id="data2"></h1>
+    <script>
+        // ============ dom ==========
+
+        // Get (ghene) -------
+        var a = document.getElementById('data1').innerText;
+        console.log(a)
+        // (dene) -----------
+        document.getElementById('data2').innerText = a;
+
+    </script>
+
+    <h2 class="data1">Welcome Pankaj 1</h2>
+    <h2 class="data1">Welcome Pankaj 2</h2>
+    <h2 class="data1">Welcome Pankaj 3</h2>
+    <h2 class="data1">Welcome Pankaj 4</h2>
+    <h2 class="data1">Welcome Pankaj 5</h2>
+    <h2 class="data1"></h2>
+    <script>
+        // get 
+        var a = document.getElementsByClassName('data1')[0].innerText;
+        console.log(a);
+
+        document.getElementsByClassName('data1')[5].innerText='Welcome Pankaj Sulakhe To javaScript';
+    </script>
+</body>
+</html>

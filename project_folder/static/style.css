@@ -35,10 +35,23 @@ body {
     grid-template-columns: 20% 70%;
     grid-template-rows: auto;
     grid-template-areas:
-        'logo nav_list';
-    gap: 25px;
+        'logo marquee nav_list';
+    gap: 10px;
     grid-template-columns: 1fr 3.5fr;
     grid-template-rows: 1fr;
+}
+
+.marquee{
+    background-color: black;
+    position: relative;
+    color: #fff;
+    left: 10px;
+    width: 60%;
+    height: 100%;
+}
+.marquee h1{
+    margin: 0px;
+    text-align: center;
 }
 
 .logo {
@@ -47,23 +60,31 @@ body {
     border-radius: 50%;
     width: 100px;
     height: 100%;
+    text-align: center;
 }
 
 .nav_list {
     grid-area: nav_list;
-    background-color: blue;
-    width: 97%;
+    position: absolute;
+    right: 0px;
+    width: 35%;
     padding-right: 3%;
     height: 100px;
 }
 
 #nav_list_option {
     list-style: none;
+    width: 100%;
     display: flex;
-    column-gap: 100px;
+    column-gap: 50px;
     justify-content: end;
     margin: 0px;
     padding: 40px 0px 40px 0px;
+}
+#nav_list_option a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
 }
 
 .main {

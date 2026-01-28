@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="data1"></h1>
+    <script>
+        // innerText= ------------ Property 1
+        document.getElementById('data1').innerText = 'Welcome Pakaj'
+    </script>
+
+    <h1 id="data2"></h1>
+    <script>
+        document.getElementById('data2').innerHTML = '<mark> Welcome Pakaj</mark>'
+    </script>
+
+    <input type="text" id="val">
+    <script>
+        document.getElementById('val').value='Welcome';
+    </script>
+    <div class="box1"></div>
+    <script>
+        document.getElementsByClassName('box1')[0].style = 'width:200px; height:200px; background-color:blue; position:relative; top:50px; left:50px'
+    </script>
+    <img src="" alt="" id="img" width="300px" height="300px" style="border: 2px solid red;">
+    <script>
+        document.getElementById('img').setAttribute('style',"border:10px solid blue; border-sizing:border-box;")
+    </script>
+    <div class="box2" onclick="demo1" style="width: 200px; height: 200px; float:left; background-color: red;"></div>
+    <script>
+        function demo1(){
+            document.getElementsByClassName('box2')[0].style='width:300px; height:300px;float:right;background-color:yellow;'
+        }
+    </script>
+</body>
+</html>
