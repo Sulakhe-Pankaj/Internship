@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 400px;height: 400px;background-color: yellow;float: left;
+        }
+        .box1 img {
+            width: 100%;height: 100%;
+        }
+        .box2{
+            width: 130px;height: 400px;background-color: blue;float: left;
+        }
+        .box2 img {
+            width: 100%;height: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUIi_wwRrOhAk7FoY7EVi2Hg5bAR-6MQGVPg&s" alt="" id="mainimg">
+    </div>
+    <div class="box2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUIi_wwRrOhAk7FoY7EVi2Hg5bAR-6MQGVPg&s" alt="" id="img1" onclick="fun1()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtuDzXhf8Zko0ivuHYhZKU_tP6Lf2MHyzwGpYnFDoYyQ&s" alt="" id="img2" onclick="fun2()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRisu2vSfi0G_VGn_oOeAqaqDv433F5vSpYeAyY5xrktg&s" alt="" id="img3" onclick="fun3()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiHcgTF1dW8kDowCBT1i-TNfiShhLznj82JfWI67Bj5w&s" alt="" id="img4" onclick="fun4()">
+    </div>
+    <script>
+        function fun1(){
+        var changes = document.getElementById('img1').getAttribute('src');
+        document.getElementById('mainimg').setAttribute('src',changes);
+        }
+        function fun2(){
+        var changes = document.getElementById('img2').getAttribute('src');
+        document.getElementById('mainimg').setAttribute('src',changes);
+        }
+        function fun3(){
+        var changes = document.getElementById('img3').getAttribute('src');
+        document.getElementById('mainimg').setAttribute('src',changes);
+        }
+        function fun4(){
+        var changes = document.getElementById('img4').getAttribute('src');
+        document.getElementById('mainimg').setAttribute('src',changes);
+        }
+    </script>
+</body>
+
+</html>
