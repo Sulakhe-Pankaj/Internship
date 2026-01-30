@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 40%;
+            height: 400px;
+            display: flex; justify-content: center;
+            background-color: wheat;
+            border: 2px solid black;
+            position: relative;
+            top: 100px; left: 400px;
+        }
+       legend{
+        text-align: center;
+        color: blue;
+       }
+       input, select{
+        width: 90%;
+        height: 20px;
+       }
+
+       button{
+        width: 100px;
+        height: 30px;
+        background-color: orange;
+        cursor: pointer;
+        margin-left: 80px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="save.html" onsubmit="return fun1()">
+            <legend><h1>FORM VALIDATION</h1></legend>
+            <label>Name:-</label><br>
+            <input type="text" id="name"><br><br>
+
+            <label>Email:-</label><br>
+            <input type="email" id="email"><br><br>
+
+            <label>Mobile:-</label><br>
+            <input type="tel" id="mobile"><br><br>
+
+            <label>Sub:-</label><br>
+            <select id="sub">
+                <option>Choose</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select><br><br><br>
+
+            <button type="submit">Save</button>
+        </form>
+    </div>
+
+    <script>
+        function fun1(){
+            var status = true;
+
+            var a = document.getElementById('name');
+            var b = document.getElementById('email');
+            var c = document.getElementById('mobile');
+            var d = document.getElementById('sub');
+
+            if(a.value == ""){
+                a.style.backgroundColor = "red";
+                status = false;
+            } else {
+                a.style.backgroundColor = "green";
+            }
+
+            if(b.value == ""){
+                b.style.backgroundColor = "red";
+                status = false;
+            } else {
+                b.style.backgroundColor = "green";
+            }
+
+            if(c.value == ""){
+                c.style.backgroundColor = "red";
+                status = false;
+            } else {
+                c.style.backgroundColor = "green";
+            }
+
+            if(d.value == "Choose"){
+                d.style.backgroundColor = "red";
+                status = false;
+            } else {
+                d.style.backgroundColor = "green";
+            }
+
+            return status; // false = not submit
+
+        }
+    </script>
+</body>
+</html>

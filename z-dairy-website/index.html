@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll("[data-en]").forEach(el => {
+                el.innerText = el.getAttribute("data-" + lang);
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <h2 id="logo">
+            <div class="logo">
+                <img src="Images/logo.png" alt="श्री नागेश्वर दूध डेअरी LOGO">
+            </div>
+        </h2>
+
+        <nav>
+            <a href="index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
+            <a href="about.html" data-en="About" data-mr="आमच्याबद्दल">About</a>
+            <a href="products.html" data-en="Products" data-mr="उत्पादने">Products</a>
+            <a href="gallery.html" data-en="Gallery" data-mr="गॅलरी">Gallery</a>
+            <a href="offers.html" data-en="Offers" data-mr="ऑफर्स">Offers</a>
+            <a href="contact.html" data-en="Contact" data-mr="संपर्क">Contact</a>
+        </nav>
+
+        <div class="lang-btn">
+            <button onclick="setLang('en')">EN</button>
+            <button onclick="setLang('mr')">MR</button>
+        </div>
+    </header>
+
+    <!-- HERO SLIDER -->
+    <section class="hero">
+        <div class="slide active" style="background-image:url('images/milk.jpg');"></div>
+        <div class="slide" style="background-image:url('images/icecream.jpg');"></div>
+        <div class="slide" style="background-image:url('images/shop.jpg');"></div>
+
+        <div class="marque_design">
+            <marquee behavior="scroll" direction="left"><h2>vlbvsjlvhlkahvjklhvld</h2></marquee>
+        </div>
+
+        <div class="hero-text">
+            <h1 data-en="Fresh Milk & Premium Ice Cream" data-mr="ताजे दूध आणि प्रीमियम आईस्क्रीम">
+                Fresh Milk & Premium Ice Cream</h1>
+
+            <p data-en="Pure dairy products from trusted farms" data-mr="विश्वसनीय शेतकऱ्यांकडून शुद्ध दूध">
+                Pure dairy products from trusted farms</p>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section1">
+
+        <div class="feature_product">
+            <h2 data-en="Featured Products" data-mr="आमची प्रमुख उत्पादने">
+                Featured Products</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <img src="images/milk-3455395_1280.jpg">
+                <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/icecream.jpg">
+                <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/shop.jpg">
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/milk-3455395_1280.jpg">
+                <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/icecream.jpg">
+                <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/shop.jpg">
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/shop.jpg">
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/milk-3455395_1280.jpg">
+                <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/shop.jpg">
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/milk-3455395_1280.jpg">
+                <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/icecream.jpg">
+                <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/shop.jpg">
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/shop.jpg">
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/milk-3455395_1280.jpg">
+                <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/icecream.jpg">
+                <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/shop.jpg">
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/shop.jpg">
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/milk-3455395_1280.jpg">
+                <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/icecream.jpg">
+                <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/shop.jpg">
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>© 2026 Shree Nageshwar Dairy</footer>
+
+    <script src="js/slider.js"></script>
+</body>
+
+</html>

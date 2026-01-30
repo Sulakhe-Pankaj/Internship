@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<script>
+function setLang(lang){
+document.querySelectorAll("[data-en]").forEach(el=>{
+el.innerText = el.getAttribute("data-" + lang);
+});
+}
+</script>
+</head>
+<body>
+
+<header>
+
+        <h2 id="logo">
+            <div class="logo">
+                <img src="Images/logo.png" alt="श्री नागेश्वर दूध डेअरी LOGO">
+            </div>
+        </h2>
+
+        <nav>
+            <a href="index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
+            <a href="about.html" data-en="About" data-mr="आमच्याबद्दल">About</a>
+            <a href="products.html" data-en="Products" data-mr="उत्पादने">Products</a>
+            <a href="gallery.html" data-en="Gallery" data-mr="गॅलरी">Gallery</a>
+            <a href="offers.html" data-en="Offers" data-mr="ऑफर्स">Offers</a>
+            <a href="contact.html" data-en="Contact" data-mr="संपर्क">Contact</a>
+        </nav>
+
+        <div class="lang-btn">
+            <button onclick="setLang('en')">EN</button>
+            <button onclick="setLang('mr')">MR</button>
+        </div>
+    </header>
+
+<section class="section">
+<h2 data-en="Contact Us" data-mr="संपर्क साधा">Contact Us</h2>
+
+<p data-en="Address: Your Dairy Location"
+data-mr="पत्ता: आपली डेअरी लोकेशन">
+Address: Your Dairy Location</p>
+
+<p data-en="Phone: 9876543210"
+data-mr="फोन: 9876543210">
+Phone: 9876543210</p>
+
+<p data-en="Email: dairy@gmail.com"
+data-mr="ईमेल: dairy@gmail.com">
+Email: dairy@gmail.com</p>
+
+<p data-en="Timings: 7 AM to 10 PM"
+data-mr="वेळ: सकाळी 7 ते रात्री 10">
+Timings: 7 AM to 10 PM</p>
+</section>
+
+<footer>© 2026 Shree Nageshwar Dairy</footer>
+</body>
+</html>
