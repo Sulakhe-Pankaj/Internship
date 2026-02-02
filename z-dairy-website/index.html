@@ -4,6 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@500;700&display=swap"
+        rel="stylesheet">
 
     <script>
         function setLang(lang) {
@@ -20,7 +22,7 @@
 
         <h2 id="logo">
             <div class="logo">
-                <img src="Images/logo.png" alt="श्री नागेश्वर दूध डेअरी LOGO">
+                <img src="Images/logo.png" alt="श्री नागेश्वर दूध डेअरी LOGO" title="श्री नागेश्वर दूध डेअरी">
             </div>
         </h2>
 
@@ -46,7 +48,12 @@
         <div class="slide" style="background-image:url('images/shop.jpg');"></div>
 
         <div class="marque_design">
-            <marquee behavior="scroll" direction="left"><h2>vlbvsjlvhlkahvjklhvld</h2></marquee>
+            <marquee behavior="scroll" direction="left">
+                <h2 id="banner"
+                    data-en="Milk, dairy products, and ice cream are available at reasonable prices with us."
+                    data-mr="आमच्याकडे दूध व दुग्धजन्य पदार्थ तसेच आईस्क्रीम योग्य दरात मिळतील.">Milk, dairy products,
+                    and ice cream are available at reasonable prices with us.</h2>
+            </marquee>
         </div>
 
         <div class="hero-text">
@@ -68,103 +75,363 @@
 
         <div class="card-grid">
             <div class="card">
-                <img src="images/milk-3455395_1280.jpg">
+                <img src="images/milk-3455395_1280.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <img src="images/icecream.jpg">
+                <img src="images/icecream.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
             </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <div class="card">
-                <img src="images/shop.jpg">
+                <img src="images/shop.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
             </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 
-            <div class="card">
-                <img src="images/milk-3455395_1280.jpg">
-                <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <img src="images/icecream.jpg">
+                <img src="images/milk-3455395_1280.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
+                <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/icecream.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
             </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 
-            <div class="card">
-                <img src="images/shop.jpg">
-                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <img src="images/shop.jpg">
+                <img src="images/shop.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <img src="images/milk-3455395_1280.jpg">
+                <img src="images/shop.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/milk-3455395_1280.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
             </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <div class="card">
-                <img src="images/shop.jpg">
+                <img src="images/shop.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
             </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 
-            <div class="card">
-                <img src="images/milk-3455395_1280.jpg">
-                <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <img src="images/icecream.jpg">
+                <img src="images/milk-3455395_1280.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
+                <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/icecream.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
             </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 
-            <div class="card">
-                <img src="images/shop.jpg">
-                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <img src="images/shop.jpg">
+                <img src="images/shop.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <img src="images/milk-3455395_1280.jpg">
+                <img src="images/shop.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/milk-3455395_1280.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
             </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <div class="card">
-                <img src="images/icecream.jpg">
+                <img src="images/icecream.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
             </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 
-            <div class="card">
-                <img src="images/shop.jpg">
-                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <img src="images/shop.jpg">
+                <img src="images/shop.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <img src="images/milk-3455395_1280.jpg">
+                <img src="images/shop.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
+                <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/milk-3455395_1280.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Fresh Milk" data-mr="ताजे दूध">Fresh Milk</h3>
             </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 
-            <div class="card">
-                <img src="images/icecream.jpg">
-                <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <img src="images/shop.jpg">
+                <img src="images/icecream.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
+                <h3 data-en="Ice Cream" data-mr="आईस्क्रीम">Ice Cream</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/shop.jpg" id="img">
+                <div class="action-button" onclick="click1()"><button type="button"></button></div>
                 <h3 data-en="Paneer" data-mr="पनीर">Paneer</h3>
+            </div>
+            <div class="modal" id="viewModal">
+                <span class="close" onclick="closeModal()">×</span>
+                <div class="img-info">
+                    <img id="modalImg" title="Ice Cream">
+                    <h2 id="modalTitle" style="cursor: pointer;"></h2>
+                    <div class="txt-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
