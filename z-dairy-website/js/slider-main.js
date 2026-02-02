@@ -1,72 +1,4 @@
-// ============== SIDE NAVIGATION DRAWER
-const menuBtn = document.getElementById('menuBtn');
-const sideNav = document.getElementById('sideNav');
-const navOverlay = document.getElementById('navOverlay');
-const closeNav = document.getElementById('closeNav');
-
-function toggleNav() {
-  sideNav.classList.toggle('active');
-  navOverlay.classList.toggle('active');
-}
-
-function closeNavDrawer() {
-  sideNav.classList.remove('active');
-  navOverlay.classList.remove('active');
-}
-
-menuBtn.addEventListener('click', toggleNav);
-navOverlay.addEventListener('click', closeNavDrawer);
-closeNav.addEventListener('click', closeNavDrawer);
-
-// Close nav when a link is clicked
-const navLinks = document.querySelectorAll('.side-nav a');
-navLinks.forEach(link => {
-  link.addEventListener('click', closeNavDrawer);
-});
-
-// Close nav on ESC key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeNavDrawer();
-});
-
-// ============== fun-2
-
-const modal = document.getElementById("viewModal");
-const modalImg = document.getElementById("modalImg");
-const modalTitle = document.getElementById("modalTitle");
-const closeBtn = document.querySelector(".close");
-
-document.addEventListener("click", e => {
-  const btn = e.target.closest(".action-button");
-  if (!btn) return;
-
-  const card = btn.closest(".card");
-  modalImg.src = card.querySelector("img").src;
-  modalTitle.innerText = card.querySelector("h3").innerText;
-
-  modal.style.display = "flex";
-});
-
-closeBtn.onclick = () => modal.style.display = "none";
-
-// Slider styles
-const style = document.createElement('style');
-style.innerHTML = `
-  .slider { position: relative; overflow: hidden; }
-  .slides { display: flex; width: 100%; }
-  .slide img { display:block; width:100%; height:auto; }
-  .prev, .next {
-    position: absolute; top: 50%; transform: translateY(-50%);
-    background: rgba(0,0,0,.4); color:#fff; border:none; padding:8px 12px; cursor:pointer;
-  }
-  .prev { left: 8px; } .next { right: 8px; }
-  .dots { position:absolute; left:50%; transform:translateX(-50%); bottom:10px; display:flex; gap:6px; }
-  .dot { width:10px; height:10px; border-radius:50%; background:#ddd; border:none; cursor:pointer; }
-  .dot.active { background:#333; }
-`;
-document.head.appendChild(style);
-
-// Simple, dependency-free slider: autoplay, prev/next, dots
+// Simple, dependency-free slider that supports two markup styles
 (function () {
   const sliders = document.querySelectorAll('.slider');
   if (!sliders.length) return;
@@ -75,7 +7,7 @@ document.head.appendChild(style);
 
   function initSlider(slider) {
     const slidesWrap = slider.querySelector('.slides');
-    const slides = slider.querySelectorAll('.slide');
+    const slides = slidesWrap ? slidesWrap.querySelectorAll('.slide') : slider.querySelectorAll('.slide');
     const prev = slider.querySelector('.prev');
     const next = slider.querySelector('.next');
     const dotsContainer = slider.querySelector('.dots');
@@ -158,6 +90,3 @@ document.head.appendChild(style);
     start();
   }
 })();
-
-
-

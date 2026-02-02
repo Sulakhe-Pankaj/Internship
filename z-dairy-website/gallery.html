@@ -1,19 +1,43 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
-<script>
-function setLang(lang){
-document.querySelectorAll("[data-en]").forEach(el=>{
-el.innerText = el.getAttribute("data-" + lang);
-});
-}
-</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nageshwar Dudh Dairy & Ice Cream Parlour</title>
+    <link rel="icon" type="image/png" href="Images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll("[data-en]").forEach(el => {
+                el.innerText = el.getAttribute("data-" + lang);
+            });
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/38b39dc87d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<header>
+    <!-- SIDE NAVIGATION DRAWER -->
+    <div id="sideNav" class="side-nav">
+        <button class="close-nav" id="closeNav" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
+        <a href="about.html" data-en="About" data-mr="आमच्याबद्दल">About</a>
+        <a href="products.html" data-en="Products" data-mr="उत्पादने">Products</a>
+        <a href="gallery.html" data-en="Gallery" data-mr="गॅलरी">Gallery</a>
+        <a href="offers.html" data-en="Offers" data-mr="ऑफर्स">Offers</a>
+        <a href="contact.html" data-en="Contact" data-mr="संपर्क">Contact</a>
+    </div>
+
+    <!-- OVERLAY -->
+    <div id="navOverlay" class="nav-overlay"></div>
+
+    <header>
 
         <h2 id="logo">
             <div class="logo">
@@ -21,7 +45,11 @@ el.innerText = el.getAttribute("data-" + lang);
             </div>
         </h2>
 
-        <nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="navbar">
             <a href="index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
             <a href="about.html" data-en="About" data-mr="आमच्याबद्दल">About</a>
             <a href="products.html" data-en="Products" data-mr="उत्पादने">Products</a>
@@ -36,16 +64,129 @@ el.innerText = el.getAttribute("data-" + lang);
         </div>
     </header>
 
-<section class="section">
-<h2 data-en="Gallery" data-mr="गॅलरी">Gallery</h2>
+    <section class="gallery-section">
+        <h2>Gallery</h2>
 
-<div class="card-grid">
-<div class="card" data-en="Shop Photos" data-mr="दुकान फोटो">Shop Photos</div>
-<div class="card" data-en="Products" data-mr="उत्पादने">Products</div>
-<div class="card" data-en="Ice Cream Counter" data-mr="आईस्क्रीम काउंटर">Ice Cream Counter</div>
-</div>
-</section>
+        <!-- SHOP -->
+        <h3 class="gallery-category">Shop Photos</h3>
+        <div class="gallery-grid">
+            <div class="gallery-card"><img src="Images/shop.jpg" alt="Shop 1">
+                <div class="overlay">
+                    <h3>Shop </h3>
+                </div>
+            </div>
+            <div class="gallery-card"><img src="Images/shop.jpg" alt="Shop 2">
+                <div class="overlay">
+                    <h3>Shop </h3>
+                </div>
+            </div>
+            <div class="gallery-card"><img src="Images/shop.jpg" alt="Shop 3">
+                <div class="overlay">
+                    <h3>Shop </h3>
+                </div>
+            </div>
+        </div>
 
-<footer>© 2026 Shree Nageshwar Dairy</footer>
+        <!-- MILK PRODUCTS -->
+        <h3 class="gallery-category">Milk Products</h3>
+        <div class="gallery-grid">
+            <div class="gallery-card"><img src="Images/milk_product.jpg" alt="Milk 1"></div>
+            <div class="gallery-card"><img src="Images/milk_product1.jpg" alt="Milk 2"></div>
+            <div class="gallery-card"><img src="Images/milk_product3.jpg" alt="Milk 3"></div>
+            <div class="gallery-card"><img src="Images/milk_product4.jpg" alt="Milk 4"></div>
+            <div class="gallery-card"><img src="Images/milk_product5.jpg" alt="Milk 5"></div>
+            <div class="gallery-card"><img src="Images/milk_product6.jpg" alt="Milk 6"></div>
+            <div class="gallery-card"><img src="Images/milk_product7.jpg" alt="Milk 7"></div>
+            <div class="gallery-card"><img src="Images/milk_product8.jpg" alt="Milk 8"></div>
+            <div class="gallery-card"><img src="Images/milk_product9.jpg" alt="Milk 9"></div>
+            <div class="gallery-card"><img src="Images/milk_product10.jpg" alt="Milk 10"></div>
+            <div class="gallery-card"><img src="Images/milk_product11.jpg" alt="Milk 11"></div>
+            <div class="gallery-card"><img src="Images/milk_product12.jpg" alt="Milk 12"></div>
+            <div class="gallery-card"><img src="Images/milk_product13.avif" alt="Milk 13"></div>
+        </div>
+
+        <!-- ICE CREAM -->
+        <h3 class="gallery-category">Ice Cream Counter</h3>
+        <div class="gallery-grid">
+            <div class="gallery-card"><img src="Images/icecream.jpg" alt="Ice 1"></div>
+            <div class="gallery-card"><img src="Images/icecream1.jpg" alt="Ice 2"></div>
+            <div class="gallery-card"><img src="Images/icecream2.jpg" alt="Ice 3"></div>
+            <div class="gallery-card"><img src="Images/icecream3.jpg" alt="Ice 4"></div>
+            <div class="gallery-card"><img src="Images/icecream4.jpg" alt="Ice 5"></div>
+            <div class="gallery-card"><img src="Images/icecream5.jpg" alt="Ice 6"></div>
+            <div class="gallery-card"><img src="Images/icecream6.jpg" alt="Ice 7"></div>
+            <div class="gallery-card"><img src="Images/icecream7.jpg" alt="Ice 8"></div>
+            <div class="gallery-card"><img src="Images/icecream8.jpg" alt="Ice 9"></div>
+            <div class="gallery-card"><img src="Images/icecream9.jpg" alt="Ice 10"></div>
+            <div class="gallery-card"><img src="Images/icecream10.jpg" alt="Ice 11"></div>
+            <div class="gallery-card"><img src="Images/icecream11.jpg" alt="Ice 12"></div>
+            <div class="gallery-card"><img src="Images/icecream12.jpg" alt="Ice 13"></div>
+            <div class="gallery-card"><img src="Images/icecream13.jpg" alt="Ice 14"></div>
+            <div class="gallery-card"><img src="Images/icecream14.jpg" alt="Ice 15"></div>
+        </div>
+
+        <!-- SWEETS -->
+        <h3 class="gallery-category">Sweets</h3>
+        <div class="gallery-grid">
+            <div class="gallery-card"><img src="Images/sweets.jpg" alt="Sweet 1"></div>
+            <div class="gallery-card"><img src="Images/sweets1.jpg" alt="Sweet 2"></div>
+            <div class="gallery-card"><img src="Images/sweets2.jpg" alt="Sweet 3"></div>
+            <div class="gallery-card"><img src="Images/sweets3.jpg" alt="Sweet 4"></div>
+            <div class="gallery-card"><img src="Images/sweets4.jpg" alt="Sweet 5"></div>
+            <div class="gallery-card"><img src="Images/sweets5.jpg" alt="Sweet 6"></div>
+            <div class="gallery-card"><img src="Images/sweets6.jpg" alt="Sweet 7"></div>
+            <div class="gallery-card"><img src="Images/sweets7.jpg" alt="Sweet 8"></div>
+            <div class="gallery-card"><img src="Images/sweets8.jpg" alt="Sweet 9"></div>
+            <div class="gallery-card"><img src="Images/sweets9.jpg" alt="Sweet 10"></div>
+            <div class="gallery-card"><img src="Images/sweets10.jpg" alt="Sweet 11"></div>
+            <div class="gallery-card"><img src="Images/sweets11.jpg" alt="Sweet 12"></div>
+            <div class="gallery-card"><img src="Images/sweets12.jpg" alt="Sweet 13"></div>
+            <div class="gallery-card"><img src="Images/sweets13.jpg" alt="Sweet 14"></div>
+            <div class="gallery-card"><img src="Images/sweets14.jpg" alt="Sweet 15"></div>
+            <div class="gallery-card"><img src="Images/sweets15.jpg" alt="Sweet 16"></div>
+            <div class="gallery-card"><img src="Images/sweets16.jpg" alt="Sweet 17"></div>
+            <div class="gallery-card"><img src="Images/sweets17.jpeg" alt="Sweet 18"></div>
+            <div class="gallery-card"><img src="Images/sweets18.jpeg" alt="Sweet 19"></div>
+            <div class="gallery-card"><img src="Images/sweets19.jpeg" alt="Sweet 20"></div>
+            <div class="gallery-card"><img src="Images/sweets20.jpeg" alt="Sweet 21"></div>
+            <div class="gallery-card"><img src="Images/sweets21.jpeg" alt="Sweet 22"></div>
+            <div class="gallery-card"><img src="Images/sweets22.jpeg" alt="Sweet 23"></div>
+            <div class="gallery-card"><img src="Images/sweets23.jpeg" alt="Sweet 24"></div>
+        </div>
+    </section>
+
+    <div class="social">
+        <h2>Contacts</h2>
+
+        <div class="social_container1">
+            <div class="social-card1 insta-icon">
+                <a href="https://www.instagram.com/udhav_pande_0075_?igsh=MWEwdHZhbG42cGdm"><i class="fa-brands fa-instagram"></i></a>
+                <p>@nageshwardairy</p>
+            </div>
+
+            <div class="social-card1 whatsapp-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Chat with us</p>
+                <p>+91 8010264087</p>
+            </div>
+
+            <div class="social-card1 phone-icon">
+                <i class="fa-solid fa-phone"></i>
+                <h4>Call Us</h4>
+                <p>+91 8010264087</p>
+            </div>
+        </div>
+
+        <div class="social_container2">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7559.546509889315!2d73.85411941846479!3d18.67416828910869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c90043096ff1%3A0x837dabffeac3b24a!2sShree%20Nageshwar%20Dudh%20Dairy%20And%20Icecream%20Parlour!5e0!3m2!1sen!2sin!4v1770048659730!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    <footer>© 2026 Shree Nageshwar Dairy</footer>
+    <script src="js/slider.js"></script>
 </body>
+
 </html>

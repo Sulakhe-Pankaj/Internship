@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
-<script>
-function setLang(lang){
-document.querySelectorAll("[data-en]").forEach(el=>{
-el.innerText = el.getAttribute("data-" + lang);
-});
-}
-</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll("[data-en]").forEach(el => {
+                el.innerText = el.getAttribute("data-" + lang);
+            });
+        }
+    </script>
+
 </head>
+
 <body>
 
-<!-- HEADER SAME -->
-<header>
+    <!-- SIDE NAVIGATION DRAWER -->
+    <div id="sideNav" class="side-nav">
+        <button class="close-nav" id="closeNav" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
+        <a href="about.html" data-en="About" data-mr="आमच्याबद्दल">About</a>
+        <a href="products.html" data-en="Products" data-mr="उत्पादने">Products</a>
+        <a href="gallery.html" data-en="Gallery" data-mr="गॅलरी">Gallery</a>
+        <a href="offers.html" data-en="Offers" data-mr="ऑफर्स">Offers</a>
+        <a href="contact.html" data-en="Contact" data-mr="संपर्क">Contact</a>
+    </div>
+
+    <!-- OVERLAY -->
+    <div id="navOverlay" class="nav-overlay"></div>
+
+    <!-- HEADER SAME -->
+    <header>
 
         <h2 id="logo">
             <div class="logo">
@@ -22,7 +42,11 @@ el.innerText = el.getAttribute("data-" + lang);
             </div>
         </h2>
 
-        <nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="navbar">
             <a href="index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
             <a href="about.html" data-en="About" data-mr="आमच्याबद्दल">About</a>
             <a href="products.html" data-en="Products" data-mr="उत्पादने">Products</a>
@@ -37,14 +61,102 @@ el.innerText = el.getAttribute("data-" + lang);
         </div>
     </header>
 
-<section class="section">
-<h2 data-en="About Our Dairy" data-mr="आमच्याबद्दल">About Our Dairy</h2>
+    <section class="about-section">
 
-<p data-en="We provide fresh, pure and high quality dairy products."
-data-mr="आम्ही ताजे, शुद्ध आणि उच्च दर्जाचे डेअरी उत्पादने पुरवतो.">
-We provide fresh, pure and high quality dairy products.</p>
-</section>
+        <!-- ABOUT INTRO -->
+        <div class="about-block">
+            <h2 data-en="About Shree Nageshwar Dairy" data-mr="श्री नागेश्वर दूध डेअरी बद्दल">About Shree Nageshwar Dairy</h2>
 
-<footer>© 2026 Shree Nageshwar Dairy</footer>
+            <p data-en="Shree Nageshwar Dairy is committed to delivering the finest quality dairy products to our community. With a rich tradition of excellence and a passion for purity, we have earned the trust of thousands of customers across Pune. Our products are sourced from healthy cows and processed under strict hygienic conditions to ensure freshness and nutrition in every drop."
+                data-mr="श्री नागेश्वर दूध डेअरी आमच्या समुदायाला सर्वोत्तम गुणवत्तेचे दुग्धजन्य उत्पादने पुरवण्यासाठी प्रतिबद्ध. उत्कृष्टतेच्या समृद्ध परंपरा आणि शुद्धतेच्या आवेगाने, आम्ही पुण्यातील हजारो ग्राहकांचा विश्वास अर्जित केला आहे. आमची उत्पादने निरोगी गायांकडून मिळवलेली आहेत आणि कठोर स्वच्छतेच्या अटी अंतर्गत प्रक्रिया केल्या जातात.">
+                Shree Nageshwar Dairy is committed to delivering the finest quality dairy products to our community. With a rich tradition of excellence and a passion for purity, we have earned the trust of thousands of customers across Pune.
+            </p>
+        </div>
+
+        <!-- MISSION & VISION -->
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fas fa-bullseye"></i>
+                <h3 data-en="Our Mission" data-mr="आमचे ध्येय">Our Mission</h3>
+                <p data-en="To deliver pure, hygienic and fresh dairy products at affordable prices while maintaining the highest standards of quality and customer satisfaction."
+                    data-mr="शुद्ध, स्वच्छ व ताजे दुग्धजन्य पदार्थ परवडणारे दरात पुरवणे आणि गुणवत्तेचे उच्च मानदंड राखणे.">
+                    To deliver pure, hygienic and fresh dairy products at affordable prices.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <i class="fas fa-eye"></i>
+                <h3 data-en="Our Vision" data-mr="आमची दृष्टी">Our Vision</h3>
+                <p data-en="To become the most trusted and preferred dairy brand in Pune, known for our unwavering commitment to quality, innovation, and customer service excellence."
+                    data-mr="पुण्यात सर्वात विश्वस्त आणि प्राधान्यीकृत डेअरी ब्रँड बनणे, गुणवत्ता, नवनिर्मिती आणि ग्राहक सेवेसाठी ज्ञात.">
+                    To become the most trusted dairy brand by maintaining quality and customer satisfaction.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <i class="fas fa-heart"></i>
+                <h3 data-en="Our Values" data-mr="आमची मूल्यांकन">Our Values</h3>
+                <p data-en="Integrity, Quality, Innovation, and Customer-First approach guide everything we do. We believe in sustainable practices and ethical business standards."
+                    data-mr="सততा, गुणवत्ता, नवनिर्मिती आणि ग्राहक-प्रथम दृष्टिकोन आमच्या सर्व कामांचे मार्गदर्शन करतात.">
+                    We are committed to integrity, quality, and customer satisfaction in all our operations.
+                </p>
+            </div>
+        </div>
+
+        <!-- WHY CHOOSE US -->
+        <div class="about-block">
+            <h2 data-en="Why Choose Us" data-mr="आम्हालाच का निवडावे">Why Choose Us</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h4 data-en="Fresh Daily" data-mr="दररोज ताजे">Fresh Daily</h4>
+                    <p data-en="Fresh milk delivered every morning from healthy cows" data-mr="दररोज सकाळी निरोगी गायांकडून ताजे दूध मिळते">Fresh milk delivered daily</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4 data-en="Hygienic & Pure" data-mr="स्वच्छ व शुद्ध">Hygienic & Pure</h4>
+                    <p data-en="Processed under strict quality control standards" data-mr="कठोर गुणवत्ता नियंत्रण मानकांअंतर्गत प्रक्रिया">100% Pure & Hygienic</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-tags"></i>
+                    <h4 data-en="Affordable Prices" data-mr="परवडणारे दर">Affordable Prices</h4>
+                    <p data-en="Best quality at reasonable market prices" data-mr="सर्वोत्तम गुणवत्ता परवडणारे दरात">Best value for money</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h4 data-en="Trusted Brand" data-mr="विश्वस्त ब्रँड">Trusted Brand</h4>
+                    <p data-en="Serving thousands of happy customers since years" data-mr="अनेक वर्षांपासून हजारो संतुष्ट ग्राहकांची सेवा">Customer Trusted</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4 data-en="Quick Delivery" data-mr="जलद वितरण">Quick Delivery</h4>
+                    <p data-en="Timely and reliable delivery to your doorstep" data-mr="आपल्या दरवाजावर वेळेवर वितरण">Fast & Reliable</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4 data-en="Certified Quality" data-mr="प्रमाणित गुणवत्ता">Certified Quality</h4>
+                    <p data-en="Lab tested and certified products" data-mr="प्रयोगशाळ परीक्षित आणि प्रमाणित उत्पादने">Certified Products</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="about-cta">
+            <a href="products.html" data-en="View Our Products" data-mr="आमची उत्पादने पहा">View Our Products</a>
+            <a href="contact.html" data-en="Contact Us" data-mr="आमच्याशी संपर्क साधा">Contact Us</a>
+        </div>
+
+    </section>
+
+
+    <footer>© 2026 Shree Nageshwar Dairy</footer>
+    <script src="js/slider.js"></script>
 </body>
+
 </html>

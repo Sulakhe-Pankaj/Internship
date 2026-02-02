@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <script>
 function setLang(lang){
 document.querySelectorAll("[data-en]").forEach(el=>{
@@ -13,6 +14,22 @@ el.innerText = el.getAttribute("data-" + lang);
 </head>
 <body>
 
+<!-- SIDE NAVIGATION DRAWER -->
+<div id="sideNav" class="side-nav">
+    <button class="close-nav" id="closeNav" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+    </button>
+    <a href="index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
+    <a href="about.html" data-en="About" data-mr="आमच्याबद्दल">About</a>
+    <a href="products.html" data-en="Products" data-mr="उत्पादने">Products</a>
+    <a href="gallery.html" data-en="Gallery" data-mr="गॅलरी">Gallery</a>
+    <a href="offers.html" data-en="Offers" data-mr="ऑफर्स">Offers</a>
+    <a href="contact.html" data-en="Contact" data-mr="संपर्क">Contact</a>
+</div>
+
+<!-- OVERLAY -->
+<div id="navOverlay" class="nav-overlay"></div>
+
 <header>
 
         <h2 id="logo">
@@ -21,7 +38,11 @@ el.innerText = el.getAttribute("data-" + lang);
             </div>
         </h2>
 
-        <nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="navbar">
             <a href="index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
             <a href="about.html" data-en="About" data-mr="आमच्याबद्दल">About</a>
             <a href="products.html" data-en="Products" data-mr="उत्पादने">Products</a>
@@ -57,5 +78,6 @@ el.innerText = el.getAttribute("data-" + lang);
 </section>
 
 <footer>© 2026 Shree Nageshwar Dairy</footer>
+<script src="js/slider.js"></script>
 </body>
 </html>
