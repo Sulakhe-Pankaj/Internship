@@ -1,0 +1,60 @@
+1.⁠ ⁠Write a Python program to print your name using the ⁠ print() ⁠ function.
+ 2.⁠ ⁠Write a program to take two numbers as input and print their sum.
+ 3.⁠ ⁠Create a program that takes a user’s age and prints whether they are above 18 or not (no conditions, just print input).
+ 4.⁠ ⁠Write a program to demonstrate single-line and multi-line comments.
+ 5.⁠ ⁠Create 5 different variables (string, integer, float, boolean, complex) and print their types.
+ 6.⁠ ⁠Store your full name in a variable and print: ⁠ "Hello, <name>!" ⁠.
+ 7.⁠ ⁠Write a program where you assign a value to a variable and then reassign a new value. Print both.
+ 8.⁠ ⁠Write a program to input two numbers and print all arithmetic operations one by one.
+ 9.⁠ ⁠Create a variable with a wrong name (ex: 2name) and correct it. Explain in a comment why.
+10.⁠ ⁠Write a program to swap two numbers using a third variable.
+11.⁠ ⁠Write a program to display a multiline message using ⁠ \n ⁠.
+12.⁠ ⁠Take input of three different data types and print “Data stored successfully!”
+13.⁠ ⁠Make a program to calculate simple interest from user inputs.
+14.⁠ ⁠Write a program to print the type of data entered by the user using ⁠ type() ⁠.
+15.⁠ ⁠Use Python keyword ⁠ pass ⁠ inside an empty function and run the program.
+16.⁠ ⁠Write a program to input two integers and print their multiplication.
+17.⁠ ⁠Write a program to input two floating-point numbers and print their average.
+18.⁠ ⁠Create a complex number and print only its real and imaginary parts.
+19.⁠ ⁠Convert an integer to float and float to int; print both results.
+20.⁠ ⁠Take user input as a number in string format and convert it to an integer using ⁠ int() ⁠.
+21.⁠ ⁠Write a program to check whether a given variable is ⁠ True ⁠ or ⁠ False ⁠.
+22.⁠ ⁠Input name and print its length using ⁠ len() ⁠.
+23.⁠ ⁠Write a program to join two strings with a space in between.
+24.⁠ ⁠Convert a string number like ⁠ "123.45" ⁠ into float and print its type.
+25.⁠ ⁠Input a number and print whether it’s of type int or float (use type()).
+26.⁠ ⁠Write a program to check whether two variables have the same type.
+27.⁠ ⁠Take two numbers as strings and print their arithmetic addition after converting.
+28.⁠ ⁠Write a program to validate mobile number length = 10 using string length.
+29.⁠ ⁠Create a list of 5 values of different data types and print each value with its type.
+30.⁠ ⁠Convert integer to boolean and boolean to integer; print both.
+31.⁠ ⁠Write a program to demonstrate all arithmetic operators between two numbers.
+32.⁠ ⁠Input a number and increase it by 10 using assignment operator ⁠ += ⁠.
+33.⁠ ⁠Write a program to compare two numbers using every comparison operator.
+34.⁠ ⁠Check if a number is between 10 and 20 using logical operators (⁠ and ⁠, ⁠ or ⁠).
+35.⁠ ⁠Apply bitwise AND, OR, XOR on two integers and display results.
+36.⁠ ⁠Test membership: check if ⁠ "a" ⁠ exists in ⁠ "apple" ⁠.
+37.⁠ ⁠Check membership in a list: input a number and check if it exists in ⁠ [10, 20, 30, 40] ⁠.
+38.⁠ ⁠Write a program to compare two variables using the identity operator ⁠ is ⁠ and ⁠ is not ⁠.
+39.⁠ ⁠Take two integers and perform left shift (⁠ << ⁠) and right shift (⁠ >> ⁠) operations.
+40.⁠ ⁠Evaluate a complex expression mixing arithmetic + logical operators and print the final result.
+41.⁠ ⁠Input a number and print whether it is positive.
+42.⁠ ⁠Input a number and check if it is even or odd using if-else.
+43.⁠ ⁠Check whether a user-entered age falls under Child/Teen/Adult/Senior using if-elif ladder.
+44.⁠ ⁠Input marks and print “Pass” if marks ≥ 40 else print “Fail”.
+45.⁠ ⁠Write a program using nested if to check:
+	* Age ≥ 18
+	* If yes, check if they have an ID → Print “Eligible for voting”.
+46.⁠ ⁠Input temperature and print:
+	* ⁠ <20 ⁠: Cold
+	* ⁠ 20–30 ⁠: Normal
+	* ⁠ >30 ⁠: Hot
+47.⁠ ⁠Input three numbers and print the largest using nested if.
+48.⁠ ⁠Input a year and check if it is a leap year.
+49.⁠ ⁠Input a username and password; check if both match ⁠ "admin" ⁠ and ⁠ "1234" ⁠.
+50.⁠ ⁠Write a program:
+	* Input purchase amount
+	* If amount > 1000 → 10% discount
+	* Else if > 500 → 5% discount
+	* Else → No discount
+	* Print final amount.

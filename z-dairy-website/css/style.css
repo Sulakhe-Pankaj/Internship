@@ -839,7 +839,6 @@ footer:hover {
 .contact-card i {
   font-size: 32px;
   margin-bottom: 10px;
-  display: block;
 }
 
 .contact-card h4 {
@@ -2036,10 +2035,12 @@ footer:hover {
   
   .contact-card {
     padding: 15px;
+    /* text-align: center; */
   }
   
   .contact-card i {
     font-size: 24px;
+
   }
   
   /* SOCIAL */
